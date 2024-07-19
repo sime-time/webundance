@@ -4,17 +4,17 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <>
-      <h1>Hello World</h1>
+      <h1>Webundance.com</h1>
     </>
   );
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Webundance",
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content: "Web development, social media management, and chat bot integration for service-based businesses",
     },
   ],
 };
