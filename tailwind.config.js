@@ -2,7 +2,11 @@
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['DM Sans Variable', 'sans-serif', 'Georgia'],
+      },
+    },
   },
   plugins: [],
 };

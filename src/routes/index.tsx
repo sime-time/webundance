@@ -4,7 +4,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <>
-      <h1>Webundance.com</h1>
+      <h1 class="bg-slate-500 text-4xl">Webundance.com</h1>
     </>
   );
 });
