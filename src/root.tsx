@@ -29,7 +29,7 @@ export default component$(() => {
         )}
         <RouterHead />
       </head>
-      <body lang="en" class="bg-black text-white">
+      <body lang="en" class="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
         <RouterOutlet />
         {!isDev && <ServiceWorkerRegister />}
       </body>

@@ -31,6 +31,7 @@
   "devDependencies": {
     "@builder.io/qwik": "^1.7.1",
     "@builder.io/qwik-city": "^1.7.1",
+    "@qwikest/icons": "^0.0.13",
     "@types/eslint": "^8.56.10",
     "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.7.1",
@@ -49,6 +50,7 @@
     "wrangler": "^3.0.0"
   },
   "dependencies": {
-    "@fontsource-variable/dm-sans": "^5.0.6"
+    "@fontsource-variable/dm-sans": "^5.0.6",
+    "flowbite": "^2.4.1"
   }
 }
