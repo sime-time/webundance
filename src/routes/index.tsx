@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import Hero from "../components/Hero"
+import Hero from "../componentz/Hero"
 
 export default component$(() => {
   return (
