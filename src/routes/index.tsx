@@ -1,10 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import Hero from "../components/Hero"
 
 export default component$(() => {
   return (
     <>
-      <h1 class="text-4xl">Webundance.com</h1>
+      <Hero />
     </>
   );
 });
