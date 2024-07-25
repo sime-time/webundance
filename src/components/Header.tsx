@@ -1,10 +1,10 @@
 import { component$ } from "@builder.io/qwik";
-import Navbar from "./Navbar";
+import NavBar from "./NavBar";
 
 export default component$(() => {
   return (
     <header>
-      <Navbar />
+      <NavBar />
     </header>
   );
 });
