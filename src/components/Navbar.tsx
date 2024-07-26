@@ -14,6 +14,7 @@ export default component$(() => {
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Services", link: "/services" },
+    { name: "Pricing", link: "/#pricing" },
     { name: "Portfolio", link: "/portfolio" },
   ];
 
@@ -32,11 +33,11 @@ export default component$(() => {
 
 
   return (
-    <nav class="p-4 md:p-6 mx-auto max-w-6xl flex flex-row justify-between font-medium text-white items-center">
+    <nav class="py-4 px-4 md:py-6 mx-auto max-w-6xl flex flex-row justify-between font-medium text-white items-center">
       <div class="w-16 h-16">
         <Link href="/"><Logo /> </Link>
       </div>
-      <div class={`md:static absolute md:min-h-fit min-h-[70vh] transition-[left] ${menuLeft.value} md:w-auto w-full flex items-center px-5 top-[12%] bg-slate-800 md:bg-transparent`}>
+      <div class={`md:static absolute md:min-h-fit min-h-[90vh] transition-[left] ${menuLeft.value} md:w-auto w-full flex items-center px-5 top-[12%] bg-slate-800 md:bg-transparent z-20`}>
         <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-16 text-xl md:text-base">
           {navItems.map((item, index) => (
             <li key={index}>

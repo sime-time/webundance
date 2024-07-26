@@ -2,10 +2,14 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
-    <section class="p-4 md:p-5 mx-auto max-w-6xl flex flex-row gap-6">
-      <div>
-        <h1 class="text-6xl">Fast websites designed to turn clicks into clients.</h1>
-        <button class="relative justify-center cursor-pointer px-4 py-2 border bg-yellow-500 border-yellow-400 rounded-lg hover:bg-yellow-400 hover:border-yellow-300">Free Discovery Call</button>
+    <section class="px-4 py-12 mx-auto max-w-6xl flex flex-col md:flex-row gap-16">
+      <div class="flex flex-col gap-9">
+        <h1 class="text-6xl text-wrap leading-tight">Fast websites that turn <b class="italic">clicks into clients.</b></h1>
+        <p class="text-xl leading-normal">We provide copywriting and web development to make your website a lead-converting machine.</p>
+        <div class="flex flex-row items-center gap-8 md:gap-12 ">
+          <button class="relative justify-center cursor-pointer px-6 py-3 border bg-yellow-500 border-yellow-400 rounded-lg hover:bg-yellow-400 hover:border-yellow-300">Start my website</button>
+          <a href="#pricing" class="focus:ring-offset-3 relative inline-flex h-fit w-fit rounded-lg border border-blue-100/20 bg-blue-200/10 px-6 py-3 text-blue-200 outline-none ring-yellow-300 transition-colors after:absolute after:inset-0 after:-z-10 after:animate-pulse after:rounded-full after:bg-yellow-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-yellow-200/40 hover:text-yellow-300 after:hover:bg-opacity-15 focus:ring-2">Pricing</a>
+        </div>
       </div>
       <div class="glass-container p-3">
         <img src="./hero-review.png" alt="5 star review" width="800" height="800" />
