@@ -63,10 +63,10 @@ export default component$(() => {
       </div>
 
       <div class={`sm:hidden w-[100vw] wrapper ${showMenuClass.value}`}>
-        <ul class="flex flex-col text-2xl inside-wrapper">
+        <ul class="flex flex-col text-xl inside-wrapper">
           {navItems.map((item, index) => (
             <li key={index} class="border-b py-4 mx-4">
-              <Link href={item.link} class="hover:text-yellow-300">{item.name}</Link>
+              <Link href={item.link} class="hover:text-yellow-300 inline-flex w-full">{item.name}</Link>
             </li>
           ))}
           <li class="py-6 mx-4 w-auto">
