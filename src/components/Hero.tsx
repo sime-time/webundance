@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import { IoStarSolid } from "@qwikest/icons/ionicons";
 
-import CollegeCarryLogo from "../assets/collegecarry.png?jsx";
-import ReviewerImg from "../assets/reviewer-headshot.jpg?jsx";
+import CollegeCarryLogo from "~/assets/collegecarry.png?jsx";
+import ReviewerImg from "~/assets/reviewer.jpg?jsx";
 
 export default component$(() => {
   return (
@@ -36,10 +36,10 @@ export default component$(() => {
 
         <div class="flex flex-row justify-between items-center">
           <div>
-            <p>Medard</p>
+            <p class="text-blue-200">Medard</p>
             <p class="text-slate-400"> CEO / College Carry</p>
           </div>
-          <ReviewerImg alt="College carry CEO" style={{ width: "60px", height: "60px", borderRadius: "0.5rem" }} />
+          <ReviewerImg alt="CEO of College Carry" style={{ width: "60px", height: "60px", borderRadius: "0.5rem" }} />
         </div>
 
       </div>
