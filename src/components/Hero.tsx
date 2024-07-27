@@ -1,9 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { IoStarSolid } from "@qwikest/icons/ionicons";
 
-import CollegeCarryLogo from "~/assets/collegecarry.png?jsx";
-import ReviewerImg from "~/assets/reviewer.jpg?jsx";
-
 export default component$(() => {
   return (
     <section class="px-4 py-5 md:py-12 mx-auto max-w-6xl flex flex-col md:flex-row gap-10">
@@ -20,7 +17,7 @@ export default component$(() => {
       <div class="glass-container p-6 md:p-8 flex flex-col justify-between h-full w-full gap-6 basis-1/3">
 
         <div class="flex flex-row justify-between items-center">
-          <CollegeCarryLogo alt="College carry logo" style={{ width: "100px", height: "50px" }} />
+          <img src="/collegecarry.png" alt="College carry logo" width="100" height="50" />
           <div class="flex flex-row text-white text-2xl">
             <IoStarSolid />
             <IoStarSolid />
@@ -39,7 +36,7 @@ export default component$(() => {
             <p class="text-blue-200">Medard</p>
             <p class="text-slate-400"> CEO / College Carry</p>
           </div>
-          <ReviewerImg alt="CEO of College Carry" style={{ width: "60px", height: "60px", borderRadius: "0.5rem" }} />
+          <img src="reviewer.jpg" alt="CEO of College Carry" width="60" height="60" class="rounded-lg" />
         </div>
 
       </div>

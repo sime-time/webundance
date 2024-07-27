@@ -1,7 +1,7 @@
 import { component$, useSignal, $ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { IoMenuSharp, IoCloseSharp } from "@qwikest/icons/ionicons";
-import Logo from "../assets/logo.svg?jsx";
+import Logo from "~/assets/logo.svg?jsx";
 
 interface NavItem {
   name: string;
