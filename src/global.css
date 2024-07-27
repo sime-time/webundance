@@ -17,3 +17,17 @@
   @apply absolute inset-0 -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
   content: "";
 }
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+}
+
+.wrapper.is-open {
+  grid-template-rows: 1fr;
+}
+
+.inside-wrapper {
+  overflow: hidden;
+}
