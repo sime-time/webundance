@@ -41,13 +41,13 @@ export default component$(() => {
         <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-16 text-xl md:text-base">
           {navItems.map((item, index) => (
             <li key={index}>
-              <Link href={item.link} class="hover:text-gray-300 py-4">{item.name}</Link>
+              <Link href={item.link} class="hover:text-yellow-400 py-4">{item.name}</Link>
             </li>
           ))}
         </ul>
       </div>
       <div class="flex items-center gap-6">
-        <button class="focus:ring-offset-3 relative inline-flex h-fit w-fit rounded-lg border border-blue-100/20 bg-blue-200/10 px-6 py-3 text-blue-200 text-lg outline-none ring-yellow-300 transition-colors after:absolute after:inset-0 after:-z-10 after:animate-pulse after:rounded-full after:bg-yellow-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-yellow-200/40 hover:text-yellow-300 after:hover:bg-opacity-15 focus:ring-2">Contact</button>
+        <button class="focus:ring-offset-3 relative inline-flex h-fit w-fit rounded-lg border border-blue-100/20 bg-blue-200/10 px-6 py-3 text-blue-200 outline-none ring-yellow-300 transition-colors after:absolute after:inset-0 after:-z-10 after:animate-pulse after:rounded-full after:bg-yellow-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-yellow-200/40 hover:text-yellow-300 after:hover:bg-opacity-15 focus:ring-2">Contact</button>
         <div class="text-3xl cursor-pointer md:hidden" onClick$={toggleMenu}>{menuIsOpen.value ? <IoCloseSharp /> : <IoMenuSharp />} </div>
       </div>
     </nav>
