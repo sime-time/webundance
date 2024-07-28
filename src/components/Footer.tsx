@@ -25,7 +25,7 @@ export default component$(() => {
             {navItems.map((item: NavItem, index) => (
               item.name.toLowerCase() !== "services" ? (
                 <li key={index}>
-                  <Link href={item.link} class="text-slate-400 inline-flex flex-col py-3 md:py-2 w-full">{item.name}</Link>
+                  <Link href={item.link} class="text-slate-400 inline-flex flex-col py-3 md:py-2 w-full md:w-fit">{item.name}</Link>
                 </li>
               ) : null
             ))}
@@ -43,7 +43,7 @@ export default component$(() => {
 
       <div class="bg-blue-200/10 py-3 border-t border-slate-100/20">
         <div class="mx-auto max-w-6xl flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>&copy; 2024 Webundance. All rights reserved.</p>
+          <p>&copy; 2024 Webundance. All Rights Reserved.</p>
           <div><Link href="/">Privacy Policy</Link></div>
         </div>
       </div>

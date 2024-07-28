@@ -48,7 +48,7 @@ export default component$(() => {
           <ul class="flex flex-row items-center gap-[4vw] text-base">
             {navItems.map((item, index) => (
               <li key={index}>
-                <Link href={item.link} class="hover:text-yellow-400 py-4">{item.name}</Link>
+                <Link href={item.link} class="hover:text-yellow-300 py-4">{item.name}</Link>
               </li>
             ))}
           </ul>
