@@ -2,6 +2,7 @@ import { component$, useSignal, $ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { IoMenuSharp, IoCloseSharp } from "@qwikest/icons/ionicons";
 import Logo from "~/assets/logo.svg?jsx";
+import FlyoutLink from "./FlyoutLink";
 
 export interface NavItem {
   name: string;
@@ -15,6 +16,12 @@ export const navItems: NavItem[] = [
   { name: "Pricing", link: "/#pricing" },
   { name: "Portfolio", link: "/portfolio" },
 ];
+
+export const NavServices = component$(() => {
+  return (
+    <div class="text-black">COmputers</div>
+  );
+});
 
 export default component$(() => {
 
@@ -47,9 +54,15 @@ export default component$(() => {
         <div class="hidden sm:flex w-auto static min-h-fit items-center px-5 bg-slate-800 bg-transparent z-20">
           <ul class="flex flex-row items-center gap-[4vw] text-base">
             {navItems.map((item, index) => (
-              <li key={index}>
-                <Link href={item.link} class="hover:text-yellow-300 py-4">{item.name}</Link>
-              </li>
+              item.name.toLowerCase() === "services" ? (
+                <li key={index}>
+                  <FlyoutLink href={item.link} FlyoutContent={NavServices}>{item.name}</FlyoutLink>
+                </li>
+              ) : (
+                <li key={index}>
+                  <Link href={item.link} class="hover:text-yellow-300 py-4">{item.name}</Link>
+                </li>
+              )
             ))}
           </ul>
         </div>
