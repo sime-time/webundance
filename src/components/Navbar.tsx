@@ -3,20 +3,20 @@ import { Link } from "@builder.io/qwik-city";
 import { IoMenuSharp, IoCloseSharp } from "@qwikest/icons/ionicons";
 import Logo from "~/assets/logo.svg?jsx";
 
-interface NavItem {
+export interface NavItem {
   name: string;
   link: string;
 }
 
-export default component$(() => {
+export const navItems: NavItem[] = [
+  { name: "Home", link: "/" },
+  { name: "About", link: "/about" },
+  { name: "Services", link: "/services" },
+  { name: "Pricing", link: "/#pricing" },
+  { name: "Portfolio", link: "/portfolio" },
+];
 
-  const navItems: NavItem[] = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/about" },
-    { name: "Services", link: "/services" },
-    { name: "Pricing", link: "/#pricing" },
-    { name: "Portfolio", link: "/portfolio" },
-  ];
+export default component$(() => {
 
   const menuIsOpen = useSignal(false);
   const showMenuClass = useSignal("");
@@ -31,9 +31,8 @@ export default component$(() => {
     }
   });
 
-
   return (
-    <nav class=" mx-auto max-w-6xl font-medium text-white items-center flex flex-col w-full">
+    <nav class="mx-auto max-w-6xl font-medium text-white items-center flex flex-col w-full">
       <div class="py-4 px-4 md:py-6 flex flex-row flex-wrap justify-between w-full">
 
         <Link href="/">
