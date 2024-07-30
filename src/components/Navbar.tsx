@@ -63,7 +63,7 @@ export default component$(() => {
           </div>
         </Link>
 
-        <div class="hidden sm:flex w-auto static min-h-fit items-center px-5 bg-slate-800 bg-transparent z-20">
+        <div class="hidden md:flex w-auto static min-h-fit items-center px-5 bg-slate-800 bg-transparent z-20">
           <ul class="flex flex-row items-center gap-[4vw] text-base">
             {navItems.map((item, index) => (
               item.name.toLowerCase() === "services" ? (
@@ -80,13 +80,13 @@ export default component$(() => {
         </div>
 
         <div class="flex items-center gap-4">
-          <button class="focus:ring-offset-3 relative hidden sm:inline-flex h-fit w-fit rounded-lg border border-blue-100/20 bg-blue-200/10 px-4 py-2 text-blue-200 outline-none ring-yellow-300 transition-colors after:absolute after:inset-0 after:-z-10 after:animate-pulse after:rounded-full after:bg-yellow-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-yellow-200/40 hover:text-yellow-300 after:hover:bg-opacity-15 focus:ring-2">Contact</button>
-          <div class="text-3xl cursor-pointer sm:hidden" onClick$={toggleMenu}>{menuIsOpen.value ? <IoCloseSharp /> : <IoMenuSharp />} </div>
+          <button class="focus:ring-offset-3 relative hidden md:inline-flex h-fit w-fit rounded-lg border border-blue-100/20 bg-blue-200/10 px-4 py-2 text-blue-200 outline-none ring-yellow-300 transition-colors after:absolute after:inset-0 after:-z-10 after:animate-pulse after:rounded-full after:bg-yellow-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-yellow-200/40 hover:text-yellow-300 after:hover:bg-opacity-15 focus:ring-2">Contact</button>
+          <div class="text-3xl cursor-pointer md:hidden" onClick$={toggleMenu}>{menuIsOpen.value ? <IoCloseSharp /> : <IoMenuSharp />} </div>
         </div>
 
       </div>
 
-      <div class={`sm:hidden w-[100vw] wrapper ${showMenuClass.value}`}>
+      <div class={`md:hidden w-[100vw] wrapper ${showMenuClass.value}`}>
         <ul class="flex flex-col text-xl inside-wrapper">
           {navItems.map((item, index) => (
             <li key={index} class="py-4 mx-4 border-b border-slate-100/40">
@@ -105,7 +105,7 @@ export default component$(() => {
             </li>
           ))}
           <li class="py-6 mx-4 w-auto">
-            <button class="focus:ring-offset-3 relative text-center justify-center sm:hidden inline-flex h-fit w-full rounded-lg border border-blue-100/20 bg-blue-200/10 px-4 py-2 text-blue-200 outline-none ring-yellow-300 transition-colors after:absolute after:inset-0 after:-z-10 after:animate-pulse after:rounded-full after:bg-yellow-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-yellow-200/40 hover:text-yellow-300 after:hover:bg-opacity-15 focus:ring-2">Contact</button>
+            <button class="focus:ring-offset-3 relative text-center justify-center md:hidden inline-flex h-fit w-full rounded-lg border border-blue-100/20 bg-blue-200/10 px-4 py-2 text-blue-200 outline-none ring-yellow-300 transition-colors after:absolute after:inset-0 after:-z-10 after:animate-pulse after:rounded-full after:bg-yellow-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 hover:border-yellow-200/40 hover:text-yellow-300 after:hover:bg-opacity-15 focus:ring-2">Contact</button>
           </li>
 
         </ul>
