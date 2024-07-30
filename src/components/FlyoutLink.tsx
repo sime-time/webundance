@@ -2,7 +2,6 @@ import { Slot, component$, useSignal } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import type { Component } from "@builder.io/qwik";
 import { IoChevronDown } from "@qwikest/icons/ionicons";
-import { animate } from "motion";
 
 interface FlyoutLinkProps {
   href: string;
@@ -29,10 +28,7 @@ export default component$<FlyoutLinkProps>(({ href, FlyoutContent }) => {
         </span>
       </Link>
       {isOpen.value &&
-        <div
-          id="motion-div"
-          class="absolute left-1/2 top-12 -translate-x-1/2 bg-white text-black"
-        >
+        <div class="absolute left-1/2 top-12 -translate-x-1/2 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-xl">
           <FlyoutContent />
         </div>
       }

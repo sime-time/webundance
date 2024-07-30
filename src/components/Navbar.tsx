@@ -17,9 +17,21 @@ export const navItems: NavItem[] = [
   { name: "Portfolio", link: "/portfolio" },
 ];
 
+export const navServices: NavItem[] = [
+  { name: "Copywriting", link: "/services#copywriting" },
+  { name: "Website Development", link: "/services#webdev" },
+  { name: "AI Chatbot", link: "/services#aichatbot" },
+]
+
 export const NavServices = component$(() => {
   return (
-    <div class="text-black">COmputers</div>
+    <ul class="flex flex-col">
+      {navServices.map((item, index) => (
+        <li key={index} class="p-4 [&:not(:first-child)]:border-t border-slate-100/20">
+          <Link href={item.link} class="hover:text-yellow-300 inline-flex w-full">{item.name}</Link>
+        </li>
+      ))}
+    </ul>
   );
 });
 
@@ -77,8 +89,19 @@ export default component$(() => {
       <div class={`sm:hidden w-[100vw] wrapper ${showMenuClass.value}`}>
         <ul class="flex flex-col text-xl inside-wrapper">
           {navItems.map((item, index) => (
-            <li key={index} class="border-b py-4 mx-4">
+            <li key={index} class="py-4 mx-4 border-b border-slate-100/40">
               <Link href={item.link} class="hover:text-yellow-300 inline-flex w-full">{item.name}</Link>
+              {item.name.toLowerCase() === "services" ? (
+                <div class="flex flex-col ml-8 mt-4 gap-4">
+                  {navServices.map((item, index) => (
+                    <span key={index}>
+                      <Link href={item.link}>{item.name}</Link>
+                    </span>
+                  ))
+                  }
+                </div>
+              ) : null
+              }
             </li>
           ))}
           <li class="py-6 mx-4 w-auto">

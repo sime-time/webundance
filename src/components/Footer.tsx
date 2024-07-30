@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import Logo from "~/assets/logo.svg?jsx";
 import type { NavItem } from "./Navbar";
-import { navItems } from "./Navbar";
+import { navItems, navServices } from "./Navbar";
 
 
 export default component$(() => {
@@ -25,7 +25,7 @@ export default component$(() => {
             {navItems.map((item: NavItem, index) => (
               item.name.toLowerCase() !== "services" ? (
                 <li key={index}>
-                  <Link href={item.link} class="text-slate-400 inline-flex flex-col py-3 md:py-2 w-full md:w-fit">{item.name}</Link>
+                  <Link href={item.link} class="text-slate-400 hover:text-slate-100 inline-flex flex-col py-3 md:py-2 w-full md:w-fit">{item.name}</Link>
                 </li>
               ) : null
             ))}
@@ -34,6 +34,15 @@ export default component$(() => {
 
         <div class="text-center md:text-left w-full border-t md:border-none border-slate-100/20 py-3">
           <h3 class="font-bold mb-3 text-lg"><Link href="/services">Services</Link></h3>
+          <ul class="flex flex-col">
+            {navServices.map((item: NavItem, index) => (
+              item.name.toLowerCase() !== "services" ? (
+                <li key={index}>
+                  <Link href={item.link} class="text-slate-400 hover:text-slate-100 inline-flex flex-col py-3 md:py-2 w-full md:w-fit">{item.name}</Link>
+                </li>
+              ) : null
+            ))}
+          </ul>
         </div>
 
         <div class="text-center md:text-left w-full border-t md:border-none border-slate-100/20 py-3">
