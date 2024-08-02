@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+import { Link } from "@builder.io/qwik-city";
 import ComputerPhoneIcon from "~/assets/computer-phone.svg?raw";
 import CopywritingIcon from "~/assets/copywriting.svg?raw";
 import ChatbotIcon from "~/assets/chatbot.svg?raw";
@@ -8,7 +9,7 @@ export default component$(() => {
 
   return (
     <section class="px-4 py-12 mx-auto max-w-6xl flex flex-col gap-12 w-full">
-      <h1 class="text-4xl md:text-5xl">Our Services</h1>
+      <h1 class="text-4xl md:text-5xl text-center md:text-start">Our Services</h1>
       <div class="flex flex-col md:flex-row justify-between gap-12">
         <ServiceCard iconSvg={CopywritingIcon} title="Copywriting" description="Revamp the writing on your established website to convert browsers into buyers." href="/services/copywriting">
           <li>SEO-optimized web copy</li>
@@ -28,7 +29,7 @@ export default component$(() => {
         </ServiceCard>
       </div>
       <div class="flex justify-center items-center">
-        <button class="relative cursor-pointer transition-colors px-6 py-3 border bg-yellow-500 border-yellow-400 rounded-lg hover:bg-yellow-400 hover:border-yellow-300 w-1/3">I want all 3!</button>
+        <Link href="/contact" class="relative cursor-pointer transition-colors px-6 py-3 border bg-yellow-500 border-yellow-400 rounded-lg hover:bg-yellow-400 hover:border-yellow-300 text-center w-full md:w-1/3 ">I want all 3!</Link>
       </div>
 
     </section>
