@@ -3,12 +3,13 @@ import { Link } from "@builder.io/qwik-city";
 import Logo from "~/assets/logo.svg?jsx";
 import type { NavItem } from "./Navbar";
 import { navItems, navServices } from "./Navbar";
+import { IoMailSolid, IoCallSolid, IoLocationSharp } from "@qwikest/icons/ionicons";
 
 
 export default component$(() => {
 
   return (
-    <footer class="flex flex-col ">
+    <footer class="flex flex-col">
       <div class="mx-auto max-w-6xl w-full flex flex-col md:flex-row gap-3 md:gap-8 justify-between items-center md:items-start border-t border-slate-100/20">
 
         <div class="flex flex-col gap-3 text-center md:text-left items-center md:items-start w-full  py-4">
@@ -47,6 +48,17 @@ export default component$(() => {
 
         <div class="text-center md:text-left w-full border-t md:border-none border-slate-100/20 py-3">
           <h3 class="font-bold mb-3 text-lg"><Link href="/contact">Contact</Link></h3>
+          <ul class="flex flex-col items-center md:items-start">
+            <li>
+              <a href="tel:3174693673" class="text-slate-400 hover:text-slate-100 inline-flex flex-row gap-2 py-3 md:py-2 w-full md:w-fit items-center"><IoCallSolid /> (317) 469-3673</a>
+            </li>
+            <li>
+              <a href="mailto:contact@webundance.com" class="text-slate-400 hover:text-slate-100 inline-flex flex-row gap-2 py-3 md:py-2 w-full md:w-fit items-center"><IoMailSolid /> contact@webundance.com</a>
+            </li>
+            <li>
+              <span class="text-slate-400 hover:text-slate-100 inline-flex flex-row gap-2 py-3 md:py-2 w-full md:w-fit items-center"><IoLocationSharp /> Indianapolis, Indiana</span>
+            </li>
+          </ul>
         </div>
       </div>
 

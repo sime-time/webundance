@@ -3,12 +3,12 @@ import { Link } from "@builder.io/qwik-city";
 import type { Component } from "@builder.io/qwik";
 import { IoChevronDown } from "@qwikest/icons/ionicons";
 
-interface FlyoutLinkProps {
+interface DropdownLinkProps {
   href: string;
-  FlyoutContent: Component;
+  DropdownContent: Component;
 }
 
-export default component$<FlyoutLinkProps>(({ href, FlyoutContent }) => {
+export default component$<DropdownLinkProps>(({ href, DropdownContent }) => {
 
   const isOpen = useSignal(false);
 
@@ -29,7 +29,7 @@ export default component$<FlyoutLinkProps>(({ href, FlyoutContent }) => {
       </Link>
       {isOpen.value &&
         <div class="absolute left-1/2 top-12 -translate-x-1/2 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-xl">
-          <FlyoutContent />
+          <DropdownContent />
         </div>
       }
     </div>

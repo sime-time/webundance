@@ -2,7 +2,7 @@ import { component$, useSignal, $ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { IoMenuSharp, IoCloseSharp } from "@qwikest/icons/ionicons";
 import Logo from "~/assets/logo.svg?jsx";
-import FlyoutLink from "./FlyoutLink";
+import DropdownLink from "./DropdownLink";
 
 export interface NavItem {
   name: string;
@@ -68,7 +68,7 @@ export default component$(() => {
             {navItems.map((item, index) => (
               item.name.toLowerCase() === "services" ? (
                 <li key={index}>
-                  <FlyoutLink href={item.link} FlyoutContent={NavServices}>{item.name}</FlyoutLink>
+                  <DropdownLink href={item.link} DropdownContent={NavServices}>{item.name}</DropdownLink>
                 </li>
               ) : (
                 <li key={index}>
