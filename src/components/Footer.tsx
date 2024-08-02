@@ -12,7 +12,7 @@ export default component$(() => {
     <footer class="flex flex-col">
       <div class="mx-auto max-w-6xl w-full flex flex-col md:flex-row gap-3 md:gap-8 justify-between items-center md:items-start border-t border-slate-100/20">
 
-        <div class="flex flex-col gap-3 text-center md:text-left items-center md:items-start w-full  py-4">
+        <div class="flex flex-col gap-3 text-center md:text-left items-center md:items-start w-full py-4">
           <div class="h-12 w-12">
             <Logo />
           </div>
@@ -20,7 +20,7 @@ export default component$(() => {
           <p class="w-[80%] md:w-full text-slate-400">Indianapolis website and copywriting services for small to medium-sized businesses.</p>
         </div>
 
-        <div class="text-center md:text-left w-full border-t md:border-none border-slate-100/20 py-4">
+        <div class="text-center md:text-left w-full border-t md:border-none border-slate-100/20 py-3 md:pl-16">
           <h3 class="font-bold mb-3 text-lg">Browse</h3>
           <ul class="flex flex-col">
             {navItems.map((item: NavItem, index) => (
