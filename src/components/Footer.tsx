@@ -22,7 +22,7 @@ export default component$(() => {
 
         <div class="text-center md:text-left w-full border-t md:border-none border-slate-100/20 py-3 md:pl-16">
           <h3 class="font-bold mb-3 text-lg">Browse</h3>
-          <ul class="flex flex-col">
+          <ul class="flex flex-row md:flex-col justify-evenly">
             {navItems.map((item: NavItem, index) => (
               item.name.toLowerCase() !== "services" ? (
                 <li key={index}>
