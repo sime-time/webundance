@@ -7,14 +7,14 @@ import ServiceCard from "./ServiceCard";
 export default component$(() => {
 
   return (
-    <section class="px-4 py-12 mx-auto max-w-6xl flex flex-col gap-6">
+    <section class="px-4 py-12 mx-auto max-w-6xl flex flex-col gap-12 w-full">
       <h1 class="text-4xl md:text-5xl">Our Services</h1>
       <div class="flex flex-col md:flex-row justify-between gap-12">
         <ServiceCard iconSvg={CopywritingIcon} title="Copywriting" description="Revamp the writing on your established website to convert browsers into buyers." href="/services/copywriting">
           <li>SEO-optimized web copy</li>
-          <li>Technical writing</li>
-          <li>Content management</li>
           <li>Email newsletters</li>
+          <li>Social media content</li>
+          <li>Technical writing</li>
         </ServiceCard>
         <ServiceCard iconSvg={ComputerPhoneIcon} title="Website Design" description="Establish your first website or redesign your existing one." href="/services/website" >
           <li>Mobile-friendly</li>
@@ -27,6 +27,10 @@ export default component$(() => {
           <li>Managed monthly to ensure accuracy.</li>
         </ServiceCard>
       </div>
+      <div class="flex justify-center items-center">
+        <button class="relative cursor-pointer transition-colors px-6 py-3 border bg-yellow-500 border-yellow-400 rounded-lg hover:bg-yellow-400 hover:border-yellow-300 w-1/3">I want all 3!</button>
+      </div>
+
     </section>
   );
 })
