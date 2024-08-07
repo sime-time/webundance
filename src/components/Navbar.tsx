@@ -12,15 +12,15 @@ export interface NavItem {
 export const navItems: NavItem[] = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
-  { name: "Services", link: "/services" },
+  { name: "Services", link: "/#our-services" },
   { name: "Pricing", link: "/#pricing" },
   { name: "Portfolio", link: "/portfolio" },
 ];
 
 export const navServices: NavItem[] = [
-  { name: "Copywriting", link: "/services#copywriting" },
-  { name: "Website Development", link: "/services#webdev" },
   { name: "AI Chatbot", link: "/services#aichatbot" },
+  { name: "Website Development", link: "/services#webdev" },
+  { name: "Ecommerce", link: "/services" },
 ]
 
 export const NavServices = component$(() => {

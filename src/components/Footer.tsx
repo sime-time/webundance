@@ -3,7 +3,7 @@ import { Link } from "@builder.io/qwik-city";
 import Logo from "~/assets/logo.svg?jsx";
 import type { NavItem } from "./Navbar";
 import { navItems, navServices } from "./Navbar";
-import { IoMailSolid, IoCallSolid, IoLocationSharp } from "@qwikest/icons/ionicons";
+import { IoMailSolid, IoLocationSharp } from "@qwikest/icons/ionicons";
 
 
 export default component$(() => {
@@ -34,7 +34,7 @@ export default component$(() => {
         </div>
 
         <div class="text-center md:text-left w-full border-t md:border-none border-slate-100/20 py-3">
-          <h3 class="font-bold mb-3 text-lg"><Link href="/services">Services</Link></h3>
+          <h3 class="font-bold mb-3 text-lg"><Link href="/#our-services">Services</Link></h3>
           <ul class="flex flex-col">
             {navServices.map((item: NavItem, index) => (
               item.name.toLowerCase() !== "services" ? (
@@ -49,9 +49,6 @@ export default component$(() => {
         <div class="text-center md:text-left w-full border-t md:border-none border-slate-100/20 py-3">
           <h3 class="font-bold mb-3 text-lg"><Link href="/contact">Contact</Link></h3>
           <ul class="flex flex-col items-center md:items-start">
-            <li>
-              <a href="tel:3174693673" class="text-slate-400 hover:text-slate-100 inline-flex flex-row gap-2 py-3 md:py-2 w-full md:w-fit items-center"><IoCallSolid /> (317) 469-3673</a>
-            </li>
             <li>
               <a href="mailto:contact@webundance.com" class="text-slate-400 hover:text-slate-100 inline-flex flex-row gap-2 py-3 md:py-2 w-full md:w-fit items-center"><IoMailSolid /> contact@webundance.com</a>
             </li>
