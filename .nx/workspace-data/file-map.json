@@ -1,0 +1,263 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.5.7",
+  "deps": {
+    "@fontsource-variable/dm-sans": "^5.0.6",
+    "flowbite": "^2.4.1",
+    "motion": "^10.18.0",
+    "@builder.io/qwik": "^1.7.1",
+    "@builder.io/qwik-city": "^1.7.1",
+    "@qwikest/icons": "^0.0.13",
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.57.0",
+    "eslint-plugin-qwik": "^1.7.1",
+    "nx": "^19.5.7",
+    "postcss": "^8.4.31",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "qwik-image": "^0.0.13",
+    "qwik-ui": "^0.1.1",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.4.5",
+    "undici": "*",
+    "vite": "^5.2.10",
+    "vite-tsconfig-paths": "^4.2.1",
+    "wrangler": "^3.0.0"
+  },
+  "pathMappings": {
+    "~/*": [
+      "./src/*"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "my-qwik-empty-starter": [
+        {
+          "file": ".eslintignore",
+          "hash": "8788580605553967678"
+        },
+        {
+          "file": ".eslintrc.cjs",
+          "hash": "16659622349671536439"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "2221686753807412368"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "18026352017748956344"
+        },
+        {
+          "file": ".prettierrc.js",
+          "hash": "4972368046346318435"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "2125652616757145198"
+        },
+        {
+          "file": ".vscode/qwik-city.code-snippets",
+          "hash": "7944545274723969739"
+        },
+        {
+          "file": ".vscode/qwik.code-snippets",
+          "hash": "12570788749085479650"
+        },
+        {
+          "file": "README.md",
+          "hash": "12019309646414741205"
+        },
+        {
+          "file": "adapters/cloudflare-pages/vite.config.ts",
+          "hash": "13727216318708372403"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "6296165795377473467"
+        },
+        {
+          "file": "package.json",
+          "hash": "11121095944142290688",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:@qwikest/icons",
+            "npm:@types/eslint",
+            "npm:@types/node",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-plugin-qwik",
+            "npm:nx",
+            "npm:postcss",
+            "npm:prettier",
+            "npm:prettier-plugin-tailwindcss",
+            "npm:qwik-image",
+            "npm:qwik-ui",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:undici",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:wrangler",
+            "npm:@fontsource-variable/dm-sans",
+            "npm:flowbite",
+            "npm:motion"
+          ]
+        },
+        {
+          "file": "postcss.config.cjs",
+          "hash": "1579725330904862112"
+        },
+        {
+          "file": "public/_headers",
+          "hash": "12081083591992411452"
+        },
+        {
+          "file": "public/_redirects",
+          "hash": "13975889273791189387"
+        },
+        {
+          "file": "public/collegecarry.png",
+          "hash": "12135528112467037738"
+        },
+        {
+          "file": "public/favicon.svg",
+          "hash": "12647968159456569036"
+        },
+        {
+          "file": "public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "public/reviewer.jpg",
+          "hash": "10706187551416745768"
+        },
+        {
+          "file": "public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "qwik-ui.config.json",
+          "hash": "17189465645030050949"
+        },
+        {
+          "file": "qwik.env.d.ts",
+          "hash": "1792037603741036108"
+        },
+        {
+          "file": "src/assets/chatbot.svg",
+          "hash": "9790934319016416848"
+        },
+        {
+          "file": "src/assets/computer-phone.svg",
+          "hash": "175842577124172110"
+        },
+        {
+          "file": "src/assets/copywriting.svg",
+          "hash": "7292554396290731914"
+        },
+        {
+          "file": "src/assets/ecommerce.svg",
+          "hash": "3689850210943905543"
+        },
+        {
+          "file": "src/assets/logo.svg",
+          "hash": "12647968159456569036"
+        },
+        {
+          "file": "src/components/DropdownLink.tsx",
+          "hash": "11763845865253031926"
+        },
+        {
+          "file": "src/components/Footer.tsx",
+          "hash": "8409008013723687734"
+        },
+        {
+          "file": "src/components/Header.tsx",
+          "hash": "9093403493779619353"
+        },
+        {
+          "file": "src/components/Hero.tsx",
+          "hash": "5371162939611171056"
+        },
+        {
+          "file": "src/components/Navbar.tsx",
+          "hash": "7769829063413206681"
+        },
+        {
+          "file": "src/components/OurServices.tsx",
+          "hash": "1944067064855812789"
+        },
+        {
+          "file": "src/components/ReviewCard.tsx",
+          "hash": "3311855939659636298"
+        },
+        {
+          "file": "src/components/ServiceCard.tsx",
+          "hash": "10488898384344022861"
+        },
+        {
+          "file": "src/components/router-head/router-head.tsx",
+          "hash": "13869225469366272939"
+        },
+        {
+          "file": "src/entry.cloudflare-pages.tsx",
+          "hash": "4626011867160038005"
+        },
+        {
+          "file": "src/entry.dev.tsx",
+          "hash": "15859778472158270085"
+        },
+        {
+          "file": "src/entry.preview.tsx",
+          "hash": "18241176629131630768"
+        },
+        {
+          "file": "src/entry.ssr.tsx",
+          "hash": "9127566714885585545"
+        },
+        {
+          "file": "src/global.css",
+          "hash": "18254963671914234885"
+        },
+        {
+          "file": "src/root.tsx",
+          "hash": "17796603326500794766"
+        },
+        {
+          "file": "src/routes/index.tsx",
+          "hash": "1984500658220417642"
+        },
+        {
+          "file": "src/routes/layout.tsx",
+          "hash": "4658565407031178465"
+        },
+        {
+          "file": "src/routes/service-worker.ts",
+          "hash": "7756631822665481529"
+        },
+        {
+          "file": "tailwind.config.js",
+          "hash": "3991581686020937913"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "6896372378635884482"
+        },
+        {
+          "file": "vite.config.ts",
+          "hash": "9251328777692163288"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}

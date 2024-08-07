@@ -10,6 +10,7 @@
 @tailwind utilities;
 
 .glass-container {
+  z-index: 10;
   position: relative;
 }
 

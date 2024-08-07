@@ -39,10 +39,12 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.57.0",
     "eslint-plugin-qwik": "^1.7.1",
+    "nx": "^19.5.7",
     "postcss": "^8.4.31",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.4",
     "qwik-image": "^0.0.13",
+    "qwik-ui": "^0.1.1",
     "tailwindcss": "3.3.3",
     "typescript": "5.4.5",
     "undici": "*",
@@ -54,5 +56,6 @@
     "@fontsource-variable/dm-sans": "^5.0.6",
     "flowbite": "^2.4.1",
     "motion": "^10.18.0"
-  }
+  },
+  "nx": {}
 }

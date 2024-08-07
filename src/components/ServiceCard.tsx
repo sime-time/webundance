@@ -17,7 +17,7 @@ export default component$((props: ServiceCardProps) => {
       <ul class="text-start list-disc text-blue-200 w-full px-8 md:w-fit flex flex-col gap-2">
         <Slot />
       </ul>
-      <Link href={props.href} class="focus:ring-offset-3 relative inline-flex h-fit w-full rounded-lg border  bg-blue-200/10 px-6 py-3 outline-none ring-yellow-300 transition-colors after:absolute after:inset-0 after:-z-10 after:animate-pulse after:rounded-full after:bg-yellow-100 after:bg-opacity-0 after:blur-md after:transition-all after:duration-500 border-yellow-200/40 text-yellow-300 after:hover:bg-opacity-15 focus:ring-2 cursor-pointer justify-center">I want this!</Link>
+      <Link href={props.href} class="focus:ring-offset-3 relative inline-flex h-fit w-full rounded-lg border border-yellow-300 text-yellow-300 bg-yellow-600/20 px-6 py-3 outline-none ring-yellow-300 transition-colors  focus:ring-2 cursor-pointer justify-center hover:border-yellow-400 hover:text-yellow-200 hover:bg-yellow-600/80">See how this works</Link>
     </div>
   )
 });

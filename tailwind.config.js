@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['DM Sans Variable', 'sans-serif', 'Georgia'],
+        sans: ['DM Sans Variable', 'sans-serif', 'Helvetica'],
       },
     },
   },

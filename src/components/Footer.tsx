@@ -10,7 +10,7 @@ export default component$(() => {
 
   return (
     <footer class="flex flex-col">
-      <div class="mx-auto max-w-6xl w-full flex flex-col md:flex-row gap-3 md:gap-8 justify-between items-center md:items-start border-t border-slate-100/20">
+      <div class="mx-auto max-w-6xl w-full flex flex-col md:flex-row gap-3 md:gap-8 justify-between items-center md:items-start border-t border-slate-100/20 md:py-5">
 
         <div class="flex flex-col gap-3 text-center md:text-left items-center md:items-start w-full py-4">
           <div class="h-12 w-12">
