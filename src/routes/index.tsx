@@ -2,12 +2,14 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import Hero from "~/components/Hero"
 import OurServices from "~/components/OurServices";
+import FAQ from "~/components/FAQ";
 
 export default component$(() => {
   return (
     <>
       <Hero />
       <OurServices />
+      <FAQ />
     </>
   );
 });

@@ -21,7 +21,7 @@ export const navServices: NavItem[] = [
   { name: "AI Chatbot", link: "/services#aichatbot" },
   { name: "Website Development", link: "/services#webdev" },
   { name: "Ecommerce", link: "/services" },
-]
+];
 
 export const NavServices = component$(() => {
   return (
