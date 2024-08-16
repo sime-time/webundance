@@ -15,7 +15,13 @@ export default component$(() => {
         </div>
       </div>
 
-      <ReviewCard />
+      <ReviewCard
+        logoSrc="collegecarry.png"
+        review="Love working with Simeon. He was able to clean up our website and enhance it for better customer experience. Always our companies go-to guy. Highly recommend."
+        name="Medard"
+        position="CEO / College Carry"
+        profilePicSrc="medard.jpg"
+      />
 
     </section>
   );

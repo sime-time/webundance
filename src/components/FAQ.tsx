@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
-import Accordion from "./Accordion";
+import Accordion from "./Accordion"
+import { AccordionItem } from "./Accordion";
 
 export default component$(() => {
 
@@ -14,12 +15,16 @@ export default component$(() => {
   ];
 
   return (
-    <section>
+    <section class="bg-slate-800/70">
       <div class="px-4 py-12 mx-auto max-w-6xl flex flex-col gap-12 w-full">
         <h1 class="text-5xl text-center md:text-start">Frequently Asked Questions</h1>
-        {faqItems.map((faq, index) => (
-          <Accordion key={index} title={faq.question} content={faq.answer} />
-        ))}
+        <Accordion>
+          {faqItems.map((faq, index) => (
+            <AccordionItem key={index} value={index} title={faq.question}>
+              {faq.answer}
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
     </section>
 
