@@ -8,8 +8,8 @@ import { IoArrowForwardOutline } from "@qwikest/icons/ionicons";
 export default component$(() => {
 
   return (
-    <section class="bg-slate-800/70">
-      <div id="our-services" class="px-4 py-12 mx-auto max-w-6xl flex flex-col gap-12 w-full">
+    <section id="our-services" class="bg-slate-800/70">
+      <div class="px-4 py-12 mx-auto max-w-6xl flex flex-col gap-12 w-full">
         <h1 class="text-5xl text-center md:text-start">Our Services</h1>
         <div class="flex flex-col md:flex-row justify-between gap-12">
           <ServiceCard iconSvg={ChatbotIcon} title="AI Chatbot" description="Stop answering the same questions over and over again." href="/services/chatbot" >

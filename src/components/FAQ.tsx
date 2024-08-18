@@ -10,7 +10,7 @@ export default component$(() => {
   }
 
   const faqItems: questionAnswer[] = [
-    { question: "Why is the sky blue?", answer: "reflecting blue light waves or something smart." },
+    { question: "How long does it take to build my website?", answer: "The time it takes to create your website depends on how big it is. For a basic website with about 5 pages, we can usually finish it in about 2 weeks. If you need a larger website with around 15 pages, it might take 3 to 5 weeks. But don't worry - if you have a specific date you need the website ready by, let me know, and we can work together to meet your deadline." },
     { question: "Why is grass green?", answer: "something to do with chlorophyll." },
   ];
 

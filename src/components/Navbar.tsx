@@ -14,7 +14,7 @@ export const navItems: NavItem[] = [
   { name: "About", link: "/about" },
   { name: "Services", link: "/#our-services" },
   { name: "Pricing", link: "/#pricing" },
-  { name: "Portfolio", link: "/portfolio" },
+  { name: "Portfolio", link: "/#our-portfolio" },
 ];
 
 export const navServices: NavItem[] = [
