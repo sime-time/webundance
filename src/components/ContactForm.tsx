@@ -1,0 +1,37 @@
+import { component$ } from "@builder.io/qwik";
+import { Form } from "@builder.io/qwik-city";
+import { useSendEmails } from "~/routes/layout";
+
+
+export default component$(() => {
+  const action = useSendEmails();
+
+  return (
+    <section id="contact" class="bg-slate-800/70">
+      <Form action={action} class="px-4 py-12 mx-auto max-w-6xl flex flex-col gap-12 w-full">
+        <h1 class="text-5xl text-center md:text-start">Contact Us</h1>
+        <div class="grid md:grid-cols-3 gap-5 text-black">
+          <div class="flex flex-col group">
+            <label for="name" class="text-blue-200/60 group-focus-within:text-blue-200 mb-1">Name *</label>
+            <input name="name" class="rounded-md p-3" placeholder="Name" />
+          </div>
+          <div class="flex flex-col group">
+            <label for="email" class="text-blue-200/60 group-focus-within:text-blue-200 mb-1">Email *</label>
+            <input name="email" class="rounded-md p-3" placeholder="Email" />
+          </div>
+          <div class="flex flex-col group">
+            <label for="phone" class="text-blue-200/60 group-focus-within:text-blue-200 mb-1">Phone</label>
+            <input name="phone" class="rounded-md p-3" placeholder="Phone" />
+          </div>
+          <div class="flex flex-col group md:col-span-3">
+            <label class="text-blue-200/60 group-focus-within:text-blue-200 mb-1">Message</label>
+            <textarea class="rounded-md p-3 text-black resize-y h-32" placeholder="Let us know what service you want. Include any questions, concerns, ideas, or goals to make our discussion productive."></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="relative inline-flex gap-2 justify-center cursor-pointer transition-colors px-10 py-5 border text-[#f7f7f7] bg-yellow-600 border-yellow-500 rounded-lg hover:bg-yellow-500 hover:border-yellow-300 hover:text-white  outline-none ring-yellow-300 focus:ring-2 focus:ring-offset-3 text-center items-center">Submit to start the discussion</button>
+        {action.value?.success && <p>Thank you for submitting, we will reach out to you shortly.</p>}
+      </Form>
+    </section>
+  );
+});

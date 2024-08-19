@@ -8,8 +8,8 @@ export default component$(() => {
       <div class="px-4 py-12 mx-auto max-w-6xl flex flex-col gap-8 w-full">
         <h1 class="text-5xl text-center md:text-start">Our Portfolio</h1>
         <div class="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-8">
-          <PortfolioCard screenshotSrc="screencapture-collegecarry.png" websiteName="College Carry" serviceProvided="Website Repair + Email Automation" />
-          <PortfolioCard screenshotSrc="screencapture-pristineclean.png" websiteName="Pristine Clean Co." serviceProvided="Website + Booking Software Integration" />
+          <PortfolioCard screenshotSrc="screencapture-collegecarry.png" projectName="College Carry" projectCategory="Website Repair + Email Automation" />
+          <PortfolioCard screenshotSrc="screencapture-pristineclean.png" projectName="Pristine Clean Co." projectCategory="Website + Booking Software Integration" />
         </div>
         <ReviewCard
           logoSrc="pristine-logo.png"

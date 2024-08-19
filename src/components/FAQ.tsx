@@ -45,7 +45,7 @@ export default component$(() => {
       </ol>`
     },
     {
-      question: "How will I be able to make updates/changes after it is complete?",
+      question: "How will I be able to make updates after it is complete?",
       answer: "Message me and I will handle any updates or small changes you require within 24 hours. <br/>I charge hourly for any major changes that require more than 2 hours of work."
     },
     {
@@ -55,7 +55,7 @@ export default component$(() => {
   ];
 
   return (
-    <section class="bg-slate-800/70">
+    <section class="bg-slate-200/10">
       <div class="px-4 py-12 mx-auto max-w-6xl flex flex-col gap-12 w-full">
         <h1 class="text-5xl text-center md:text-start">Frequently Asked Questions</h1>
         <Accordion>
