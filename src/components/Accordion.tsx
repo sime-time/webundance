@@ -39,12 +39,12 @@ export const AccordionItem = component$((props: AccordionItemProps) => {
 
   return (
     <li class="border mb-3 rounded-xl border-slate-100/20 bg-slate-200/10 backdrop-blur-md p-2" {...props}>
-      <header role="button" onClick$={() => (selected.value = (open ? -1 : props.value))} class="flex justify-between items-center p-4 font-medium text-xl text-blue-200">
+      <header role="button" onClick$={() => (selected.value = (open ? -1 : props.value))} class="flex justify-between items-center p-4 font-medium text-lg md:text-xl text-blue-200">
         {props.title}
-        <IoChevronDown class={`text-lg transition-transform ${open ? "rotate-180" : ""}`} />
+        <span><IoChevronDown class={`text-lg transition-transform ${open ? "rotate-180" : ""}`} /></span>
       </header>
       <div class="overflow-y-hidden transition-all" style={{ height: open ? domRef.value?.offsetHeight || "0" : "0" }}>
-        <div class="pt-1 p-4 leading-relaxed text-lg" ref={domRef} ><Slot /></div>
+        <div class="pt-1 p-4 leading-relaxed text-base md:text-lg" ref={domRef} ><Slot /></div>
       </div>
     </li>
   );
