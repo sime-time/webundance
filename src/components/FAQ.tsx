@@ -40,7 +40,7 @@ export default component$(() => {
       <ol>
         <li>First, we'll have a chat - either by video or phone - to discuss what you want for your website.</li>
         <li>Then, I'll build the website using your content and following your requirements.</li>
-        <li>Next, I'll send you a link to view your new website. You can then tell me about any changes you'd like. You get two rounds of revisions to make sure you're happy.</li>
+        <li>Next, I'll send you a link to view your new website. You can then tell me about any changes you'd like.</li>
         <li>Once you're satisfied with everything, I'll make your website live for the world to see!</li>
       </ol>`
     },

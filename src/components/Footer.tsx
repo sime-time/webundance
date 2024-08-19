@@ -17,7 +17,7 @@ export default component$(() => {
             <Logo />
           </div>
           <h3 class="text-lg font-bold tracking-wider text-yellow-300">Webundance</h3>
-          <p class="w-[80%] md:w-full text-slate-400">Indianapolis website and copywriting services for small to medium-sized businesses.</p>
+          <p class="w-[80%] md:w-full text-slate-400">Indianapolis web development services for small to medium-sized businesses.</p>
         </div>
 
         <div class="text-center md:text-left w-full border-t md:border-none border-slate-100/20 py-3 md:pl-16">
