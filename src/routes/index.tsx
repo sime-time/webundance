@@ -6,7 +6,6 @@ import OurPortfolio from "~/components/OurPortfolio";
 import FAQ from "~/components/FAQ";
 import ContactForm from "~/components/ContactForm";
 
-
 export default component$(() => {
   return (
     <>

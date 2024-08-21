@@ -50,11 +50,13 @@
     "undici": "*",
     "vite": "^5.2.10",
     "vite-tsconfig-paths": "^4.2.1",
-    "wrangler": "^3.0.0"
+    "wrangler": "^3.0.0",
+    "@modular-forms/qwik": "^0.26.1"
   },
   "dependencies": {
     "@fontsource-variable/dm-sans": "^5.0.6",
     "flowbite": "^2.4.1",
+    "mailgun.js": "^10.2.3",
     "motion": "^10.18.0"
   },
   "nx": {}

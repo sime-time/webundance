@@ -2,11 +2,12 @@
  * This is the base config for vite.
  * When building, the adapter config is used which loads this file and extends it.
  */
-import { defineConfig, type UserConfig } from "vite";
+import { defineConfig, type UserConfig, loadEnv } from "vite";
 import { qwikVite } from "@builder.io/qwik/optimizer";
 import { qwikCity } from "@builder.io/qwik-city/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import pkg from "./package.json";
+import * as dotenv from "dotenv";
 
 type PkgDep = Record<string, string>;
 const { dependencies = {}, devDependencies = {} } = pkg as any as {
@@ -104,3 +105,8 @@ function errorOnDuplicatesPkgDeps(
     throw new Error(msg);
   }
 }
+
+// set up Environment Variables
+const envDir = process?.cwd();
+const envFile = ".env";
+const dotenvResult: any = dotenv.config({ path: `${envDir}/${envFile}` });

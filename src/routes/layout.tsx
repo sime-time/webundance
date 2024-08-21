@@ -1,16 +1,12 @@
 import { component$, Slot } from "@builder.io/qwik";
-import { routeAction$ } from "@builder.io/qwik-city";
 import type { RequestHandler } from "@builder.io/qwik-city";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export const useSendEmails = routeAction$(() => {
-  // this will run on the server when the user submits the form 
-  console.log('email sending...');
-  return {
-    success: true,
-  };
-});
+// re-export mailgun loader in the routes folder
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { useMailgun } from "~/shared/email";
+export { useMailgun } from "~/shared/email";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
