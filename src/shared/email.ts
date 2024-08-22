@@ -12,10 +12,13 @@ export const useResend = routeAction$(
     (async function () {
       const { data, error } = await resend.emails.send({
         from: `Webundance <support@webundance.com>`,
-        to: [formData.email],
+        to: ["support@webundance.com"],
         subject: `Hello, ${formData.name}`,
-        html: `<h1>${formData.message}</h1>
+        html: `
+        <h1>${formData.message}</h1>
+        <p>Name: ${formData.name}</p>
         <p>Phone number: ${formData.phone}</p> 
+        <p>Email: ${formData.email}</p>
         `
       })
 
