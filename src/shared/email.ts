@@ -1,30 +1,31 @@
 import { routeAction$, zod$, z } from "@builder.io/qwik-city";
-import formData from "form-data";
-import Mailgun from "mailgun.js";
+import { Resend } from "resend";
 
 // eslint-disable-next-line qwik/loader-location
-export const useMailgun = routeAction$(
-  async (data) => {
+export const useResend = routeAction$(
+  async (formData) => {
     // this will run on the server when the user submits the form 
     console.log('email sending...');
 
-    const mailgun = new Mailgun(formData);
-    const mg = mailgun.client({
-      username: 'api',
-      key: process.env.MAILGUN_API_KEY || ''
-    });
+    const resend = new Resend(process.env.RESEND_API_KEY || '');
 
-    mg.messages.create(process.env.MAILGUN_DOMAIN || '', {
-      from: `Webundance <contact@webundance.com>`,
-      to: [data.email],
-      subject: `Hello, ${data.name}`,
-      text: "This is the text!",
-      html: `<h1>${data.message}</h1>
-      <p>Phone number: ${data.phone}</p> 
-      `
-    })
-      .then(msg => console.log(msg)) // logs response data
-      .catch(err => console.error(err)); // logs any error
+    (async function () {
+      const { data, error } = await resend.emails.send({
+        from: `Webundance <support@webundance.com>`,
+        to: [formData.email],
+        subject: `Hello, ${formData.name}`,
+        html: `<h1>${formData.message}</h1>
+        <p>Phone number: ${formData.phone}</p> 
+        `
+      })
+
+      if (error) {
+        return console.error({ error });
+      }
+
+      console.log({ data });
+
+    })();
 
     return {
       success: true,

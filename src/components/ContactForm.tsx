@@ -1,9 +1,9 @@
 import { component$ } from "@builder.io/qwik";
 import { Form } from "@builder.io/qwik-city";
-import { useMailgun } from "~/shared/email";
+import { useResend } from "~/shared/email";
 
 export default component$(() => {
-  const action = useMailgun();
+  const action = useResend();
 
   return (
     <section id="contact" class="bg-slate-800/70">
