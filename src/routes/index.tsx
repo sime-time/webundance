@@ -4,7 +4,6 @@ import Hero from "~/components/Hero"
 import OurServices from "~/components/OurServices";
 import OurPortfolio from "~/components/OurPortfolio";
 import FAQ from "~/components/FAQ";
-import ContactForm from "~/components/ContactForm";
 
 export default component$(() => {
   return (
@@ -13,7 +12,6 @@ export default component$(() => {
       <OurServices />
       <OurPortfolio />
       <FAQ />
-      <ContactForm />
     </>
   );
 });

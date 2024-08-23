@@ -3,11 +3,6 @@ import type { RequestHandler } from "@builder.io/qwik-city";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-// re-export resend loader in the routes folder
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { useResend } from "~/shared/email";
-export { useResend } from "~/shared/email";
-
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
   // https://qwik.dev/docs/caching/
