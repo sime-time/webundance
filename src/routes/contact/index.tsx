@@ -20,7 +20,7 @@ export const useResend = routeAction$(
         headers: {
           'Content-Type': 'application/json',
         },
-        body: body,
+        body,
       });
 
       // check if request was successful 
