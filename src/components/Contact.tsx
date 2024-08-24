@@ -2,6 +2,8 @@ import { component$ } from "@builder.io/qwik";
 import { Form, routeAction$, z, zod$ } from "@builder.io/qwik-city";
 import { Resend } from "resend";
 
+
+// eslint-disable-next-line qwik/loader-location
 export const useResend = routeAction$(
   async (formData) => {
     // this will run on the server when the user submits the form 
