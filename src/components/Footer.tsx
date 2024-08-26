@@ -50,7 +50,7 @@ export default component$(() => {
           <h3 class="font-bold mb-3 text-lg"><Link href="/contact">Contact</Link></h3>
           <ul class="flex flex-col items-center md:items-start">
             <li>
-              <a href="mailto:contact@webundance.com" class="text-slate-400 hover:text-slate-100 inline-flex flex-row gap-2 py-3 md:py-2 w-full md:w-fit items-center"><IoMailSolid /> support@webundance.com</a>
+              <a href="mailto:support@webundance.com" class="text-slate-400 hover:text-slate-100 inline-flex flex-row gap-2 py-3 md:py-2 w-full md:w-fit items-center"><IoMailSolid /> support@webundance.com</a>
             </li>
             <li>
               <span class="text-slate-400 hover:text-slate-100 inline-flex flex-row gap-2 py-3 md:py-2 w-full md:w-fit items-center"><IoLocationSharp /> Indianapolis, Indiana</span>
