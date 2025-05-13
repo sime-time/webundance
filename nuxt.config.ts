@@ -13,4 +13,12 @@ export default defineNuxtConfig({
 			standalone: false,
 		},
 	},
+	ui: {
+		colorMode: false,
+	},
+	fonts: {
+		defaults: {
+			weights: [400, 600, 700],
+		},
+	},
 });
