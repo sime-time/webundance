@@ -23,13 +23,12 @@ function scrollToFaq() {
 					<UIcon name="lucide:arrow-right" class="h-4 w-4" />
 				</UButton>
 				<UButton
-					to="#"
+					to="/book-call"
 					size="xl"
 					variant="outline"
 					class="bg-neutral-50"
-					@click="scrollToFaq"
 				>
-					Learn More
+					Book a Call
 				</UButton>
 			</div>
 		</div>

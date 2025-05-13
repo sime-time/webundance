@@ -17,6 +17,7 @@
 		"@nuxt/ui": "3.1.1",
 		"@tailwindcss/vite": "^4.1.6",
 		"@unhead/vue": "^2.0.8",
+		"arktype": "^2.1.20",
 		"eslint": "^9.26.0",
 		"nuxt": "^3.17.2",
 		"nuxt-calendly": "0.1.21",

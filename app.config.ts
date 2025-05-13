@@ -4,6 +4,11 @@ export default defineAppConfig({
 			primary: "emerald",
 			neutral: "slate",
 		},
+		toaster: {
+			defaultVariants: {
+				position: "top-center",
+			},
+		},
 		accordion: {
 			slots: {
 				root: "space-y-3",

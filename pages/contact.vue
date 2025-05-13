@@ -1,6 +1,6 @@
 <template>
-	<main class="py-36">
-		<div class="container mx-6 md:mx-auto max-w-5xl">
+	<main class="py-16 md:py-36">
+		<div class="container mx-auto max-w-5xl px-6 md:px-0">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 				<section class="flex flex-col gap-6">
 					<h1 class="text-3xl lg:text-4xl font-bold tracking-tight">
