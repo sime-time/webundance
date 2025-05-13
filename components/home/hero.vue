@@ -1,11 +1,3 @@
-<script setup lang="ts">
-function scrollToFaq() {
-	document.getElementById("faq-section")?.scrollIntoView({
-		behavior: "smooth",
-	});
-}
-</script>
-
 <template>
 	<section class="bg-gradient-to-b from-white to-primary-100 flex justify-center pt-40 pb-32">
 		<div class="container mx-auto max-w-5xl text-center flex flex-col gap-6">
@@ -26,7 +18,7 @@ function scrollToFaq() {
 					to="/book-call"
 					size="xl"
 					variant="outline"
-					class="bg-neutral-50"
+					class="bg-white"
 				>
 					Book a Call
 				</UButton>

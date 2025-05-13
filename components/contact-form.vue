@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import type { FormSubmitEvent } from "@nuxt/ui";
-import { type } from "arktype";
+import { z } from "zod";
 
-const ContactSchema = type({
-	name: "string >= 1",
-	business: "string >= 1",
-	email: "string.email >= 1",
-	message: "string >= 1",
+const ContactSchema = z.object({
+	name: z.string().min(1, { message: "Please insert your name" }),
+	business: z.string().min(1, { message: "Please insert your business name" }),
+	email: z.string().email({ message: "Please insert a valid email address" }).min(1),
+	message: z.string().min(5, { message: "Please provide some context about your project" }),
 });
 
-type ContactSchema = typeof ContactSchema.infer;
+type ContactSchema = z.infer<typeof ContactSchema>;
 
 const formState = reactive({
 	name: "",
