@@ -2,10 +2,12 @@
 @import "@nuxt/ui";
 
 @theme {
-  --font-heading: "Poppins", sans-serif;
-  --font-display: "Inter", sans-serif;
+	--font-heading: "Poppins", sans-serif;
+	--font-display: "Inter", sans-serif;
 }
 
-h1, h2, h3 {
-  font-family: var(--font-heading);
+h1,
+h2,
+h3 {
+	font-family: var(--font-heading);
 }

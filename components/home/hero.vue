@@ -1,5 +1,5 @@
 <template>
-	<section class="bg-gradient-to-b from-neutral to-primary-100 flex justify-center py-16">
+	<section class="bg-gradient-to-b from-white to-primary-100 flex justify-center py-32">
 		<div class="container mx-auto max-w-5xl text-center flex flex-col gap-6">
 			<h1 class="text-4xl lg:text-6xl font-bold">
 				Fast websites.
