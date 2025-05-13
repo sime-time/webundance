@@ -4,22 +4,22 @@ const menuOpen = ref(false);
 const navLinks = [
 	{
 		id: 1,
+		label: "Home",
+		href: "/",
+	},
+	{
+		id: 2,
 		label: "About",
 		href: "#",
 	},
 	{
-		id: 2,
-		label: "Contact",
-		href: "#",
-	},
-	{
 		id: 3,
-		label: "Automation",
+		label: "Case Studies",
 		href: "#",
 	},
 	{
 		id: 4,
-		label: "Website Upgrade",
+		label: "Automation",
 		href: "#",
 	},
 ];
@@ -43,7 +43,7 @@ const navLinks = [
 						{{ navLink.label }}
 					</NuxtLink>
 				</div>
-				<UButton to="#" class="text-base" size="lg">
+				<UButton to="/contact" class="text-base" size="lg">
 					Get Started
 				</UButton>
 			</div>
@@ -63,14 +63,28 @@ const navLinks = [
 			<div v-if="menuOpen" class="overflow-hidden md:hidden p-4 mb-4 border-b border-neutral-300">
 				<div class="flex flex-col gap-4 text-lg">
 					<div v-for="navLink in navLinks" :key="navLink.id">
-						<NuxtLink :to="navLink.href" class="px-2 py-2 hover:text-primary transition-colors ease-in-out" @click="() => (menuOpen = false)">
+						<NuxtLink
+							:to="navLink.href"
+							class="px-2 py-2 hover:text-primary transition-colors ease-in-out"
+							@click="() => (menuOpen = false)"
+						>
 							{{ navLink.label }}
 						</NuxtLink>
 					</div>
-					<UButton to="#" size="lg" class="text-base justify-center">
+
+					<UButton
+						size="lg"
+						class="text-base justify-center"
+						@click="() => { menuOpen = false; navigateTo('/contact'); }"
+					>
 						Get Started
 					</UButton>
-					<UButton to="#" size="lg" variant="outline" class="text-base justify-center">
+					<UButton
+						size="lg"
+						variant="outline"
+						class="text-base justify-center"
+						@click="() => { menuOpen = false; navigateTo('/book-call'); }"
+					>
 						Book a Call
 					</UButton>
 				</div>

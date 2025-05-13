@@ -3,6 +3,14 @@ import type { AccordionItem } from "@nuxt/ui";
 
 const faq = ref<AccordionItem[]>([
 	{
+		label: "What do you automate?",
+		content: "Bookings. Forms. Emails. Invoices. Follow-ups. You name it.",
+	},
+	{
+		label: "What's it cost?",
+		content: "Websites start at $600. Automation starts at $800. Final quote depends on scope.",
+	},
+	{
 		label: "How long does a project take?",
 		content: "Most projects take 1-2 weeks. Bigger builds, 3-4.",
 	},
@@ -11,7 +19,7 @@ const faq = ref<AccordionItem[]>([
 		content: "I work with anyone, but I prioritize businesses in Indianapolis and Carmel, Indiana.",
 	},
 	{
-		label: "Do I need to know tech stuff?",
+		label: "Do I need to know tech?",
 		content: "No. You tell me what you need. I handle the rest.",
 	},
 	{
@@ -21,14 +29,6 @@ const faq = ref<AccordionItem[]>([
 	{
 		label: "Can I update the site myself later?",
 		content: "Yes. You'll get clear instructions or I can set it up so you never need to touch it.",
-	},
-	{
-		label: "What do you automate?",
-		content: "Bookings. Forms. Emails. Invoices. Follow-ups. You name it.",
-	},
-	{
-		label: "What's it cost?",
-		content: "Websites start at $600. Automation starts at $800. Final quote depends on scope.",
 	},
 	{
 		label: "What tech do you use?",
@@ -42,7 +42,7 @@ const faq = ref<AccordionItem[]>([
 </script>
 
 <template>
-	<section class="bg-neutral-100/80 flex justify-center py-32">
+	<section id="faq-section" class="bg-neutral-100/80 flex justify-center py-32">
 		<div class="container mx-auto max-w-5xl text-center flex flex-col gap-6 px-5 md:px-0">
 			<h1 class="text-3xl lg:text-5xl font-bold">
 				FAQ

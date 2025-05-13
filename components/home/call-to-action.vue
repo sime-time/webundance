@@ -8,11 +8,11 @@
 				Let's talk about how I can help you automate tasks and improve your online presence.
 			</p>
 			<div class="flex gap-5 justify-center">
-				<UButton to="#" size="xl">
+				<UButton to="/contact" size="xl">
 					Get In Touch
 					<UIcon name="lucide:arrow-right" class="h-4 w-4" />
 				</UButton>
-				<UButton to="#" size="xl" variant="outline" class="bg-white">
+				<UButton to="/book-call" size="xl" variant="outline" class="bg-white">
 					Book a Call
 				</UButton>
 			</div>

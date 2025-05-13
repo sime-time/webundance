@@ -1,5 +1,13 @@
+<script setup lang="ts">
+function scrollToFaq() {
+	document.getElementById("faq-section")?.scrollIntoView({
+		behavior: "smooth",
+	});
+}
+</script>
+
 <template>
-	<section class="bg-gradient-to-b from-white to-primary-100 flex justify-center py-32">
+	<section class="bg-gradient-to-b from-white to-primary-100 flex justify-center pt-40 pb-32">
 		<div class="container mx-auto max-w-5xl text-center flex flex-col gap-6">
 			<h1 class="text-4xl lg:text-6xl font-bold">
 				Fast websites.
@@ -10,11 +18,17 @@
 				We build tools that save time and win customers.
 			</p>
 			<div class="flex gap-5 justify-center">
-				<UButton to="#" size="xl">
+				<UButton to="/contact" size="xl">
 					Get Started
 					<UIcon name="lucide:arrow-right" class="h-4 w-4" />
 				</UButton>
-				<UButton to="#" size="xl" variant="outline" class="bg-neutral-50">
+				<UButton
+					to="#"
+					size="xl"
+					variant="outline"
+					class="bg-neutral-50"
+					@click="scrollToFaq"
+				>
 					Learn More
 				</UButton>
 			</div>

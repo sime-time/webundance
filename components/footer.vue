@@ -15,7 +15,7 @@ const currentYear = new Date().getFullYear();
 						</h3>
 					</NuxtLink>
 					<p class="max-w-xs">
-						Custom websites and automation solutions for local businesses. Save time, look professional, and grow your business.
+						Custom websites and AI automation solutions for local Indiana businesses. Save time, look professional, and grow your business.
 					</p>
 				</div>
 
@@ -52,6 +52,11 @@ const currentYear = new Date().getFullYear();
 						<li>
 							<NuxtLink to="#" class="hover:text-neutral-50 transition-colors">
 								Contact
+							</NuxtLink>
+						</li>
+						<li>
+							<NuxtLink to="/book-call" class="hover:text-neutral-50 transition-colors">
+								Book a Call
 							</NuxtLink>
 						</li>
 					</ul>
