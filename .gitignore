@@ -24,4 +24,5 @@ logs
 !.env.example
 
 #images
-public/images/*
+public/images/*.png
+public/images/*.jpg
