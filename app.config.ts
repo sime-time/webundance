@@ -9,6 +9,21 @@ export default defineAppConfig({
 				position: "top-center",
 			},
 		},
+		formField: {
+			defaultVariants: {
+				size: "lg",
+			},
+		},
+		input: {
+			defaultVariants: {
+				size: "lg",
+			},
+		},
+		textarea: {
+			defaultVariants: {
+				size: "lg",
+			},
+		},
 		accordion: {
 			slots: {
 				root: "space-y-3",

@@ -21,8 +21,8 @@ const formState = reactive({
 const toast = useToast();
 async function onSubmit(event: FormSubmitEvent<ContactSchema>) {
 	toast.add({
-		title: "Success",
-		description: "Form has been submitted.",
+		title: "Message Sent",
+		description: "We'll get back to you shortly.",
 		color: "success",
 	});
 	console.log(event.data);

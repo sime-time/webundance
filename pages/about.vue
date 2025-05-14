@@ -36,7 +36,7 @@ const items = [
 						:items="items"
 						class="w-full max-w-xs mx-auto"
 					>
-						<img :src="item" width="320" height="320" class="rounded-lg">
+						<img :src="item" class="rounded-lg">
 					</LazyUCarousel>
 				</section>
 			</div>
