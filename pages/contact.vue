@@ -15,6 +15,12 @@
 					<UButton to="/book-call" variant="outline" size="xl" class="w-fit">
 						Book a Time
 					</UButton>
+					<div class="flex items-center gap-2">
+						<p class="font-semibold text-xl">
+							Email:
+						</p>
+						<a href="mailto:support@webundance.com" class="text-lg underline underline-offset-3 text-primary hover:text-primary-700">support@webundance.com</a>
+					</div>
 				</section>
 				<ContactForm />
 			</div>

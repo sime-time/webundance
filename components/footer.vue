@@ -32,7 +32,7 @@ const currentYear = new Date().getFullYear();
 						</li>
 						<li>
 							<NuxtLink to="#" class="hover:text-neutral-50 transition-colors">
-								Website Upgrades
+								Website Upgrade
 							</NuxtLink>
 						</li>
 					</ul>
@@ -45,12 +45,12 @@ const currentYear = new Date().getFullYear();
 					</h3>
 					<ul class="space-y-3">
 						<li>
-							<NuxtLink to="#" class="hover:text-neutral-50 transition-colors">
+							<NuxtLink to="/about" class="hover:text-neutral-50 transition-colors">
 								About
 							</NuxtLink>
 						</li>
 						<li>
-							<NuxtLink to="#" class="hover:text-neutral-50 transition-colors">
+							<NuxtLink to="/contact" class="hover:text-neutral-50 transition-colors">
 								Contact
 							</NuxtLink>
 						</li>

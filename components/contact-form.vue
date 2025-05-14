@@ -6,7 +6,7 @@ const ContactSchema = z.object({
 	name: z.string().min(1, { message: "Please insert your name" }),
 	business: z.string().min(1, { message: "Please insert your business name" }),
 	email: z.string().email({ message: "Please insert a valid email address" }).min(1),
-	message: z.string().min(5, { message: "Please provide some context about your project" }),
+	message: z.string().min(5, { message: "Please provide some context about your problem" }),
 });
 
 type ContactSchema = z.infer<typeof ContactSchema>;

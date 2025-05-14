@@ -10,11 +10,11 @@ const navLinks = [
 	{
 		id: 2,
 		label: "About",
-		href: "#",
+		href: "/about",
 	},
 	{
 		id: 3,
-		label: "Case Studies",
+		label: "Website Upgrade",
 		href: "#",
 	},
 	{
