@@ -17,12 +17,14 @@ export default defineEventHandler(async (event) => {
 		}
 
 		const data = await resend.emails.send({
-			from: "Simeon <support@webundance.com>",
-			to: [email],
-			subject: `Hello, ${name}`,
-			html: `<strong>We've received your message</strong>
-        <p>Your business: ${business}</p>
-        <p>Your message: ${message}</p>
+			from: "webundance.com",
+			to: ["1simeondunn@gmail.com"],
+			subject: `Contact Form Submission`,
+			html: `
+        <p>Name:<br> ${name}</p>
+        <p>Email:<br> ${email}</p>
+        <p>Business:<br> ${business}</p>
+        <p>Message:<br> ${message}</p>
       `,
 		});
 

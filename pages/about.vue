@@ -13,8 +13,8 @@ const items = [
 		<div class="container mx-auto max-w-5xl px-6 md:px-0">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 				<motion.section
-					:initial="{ opacity: 0, x: -40 }"
-					:animate="{ opacity: 1, x: 0 }"
+					:initial="{ opacity: 0, x: -20, y: 20 }"
+					:animate="{ opacity: 1, x: 0, y: 0 }"
 					:transition="{ duration: 0.8, ease: 'easeOut' }"
 					class="text-lg md:text-xl flex flex-col gap-6"
 				>
