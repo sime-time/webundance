@@ -26,3 +26,5 @@ logs
 #images
 public/images/*.png
 public/images/*.jpg
+assets/images/*.png
+assets/images/*.jpg

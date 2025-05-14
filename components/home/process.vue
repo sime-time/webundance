@@ -10,7 +10,7 @@ const process = [
 		id: 2,
 		icon: "i-lucide-drafting-compass",
 		title: "Design",
-		description: "I prototype the solution. Simplicity is key.",
+		description: "I prototype the solution so you can see the vision",
 	},
 	{
 		id: 3,

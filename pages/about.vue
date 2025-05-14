@@ -36,7 +36,7 @@ const items = [
 						:items="items"
 						class="w-full max-w-xs mx-auto"
 					>
-						<img :src="item" class="rounded-lg">
+						<img :src="item" class="rounded-lg" width="378" height="504">
 					</UCarousel>
 				</section>
 			</div>
