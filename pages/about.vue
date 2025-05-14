@@ -28,7 +28,7 @@ const items = [
 					</UButton>
 				</section>
 				<section>
-					<UCarousel
+					<LazyUCarousel
 						v-slot="{ item }"
 						auto-height
 						arrows
@@ -37,7 +37,7 @@ const items = [
 						class="w-full max-w-xs mx-auto"
 					>
 						<img :src="item" width="320" height="320" class="rounded-lg">
-					</UCarousel>
+					</LazyUCarousel>
 				</section>
 			</div>
 		</div>
