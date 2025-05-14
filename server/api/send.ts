@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
 		}
 
 		const data = await resend.emails.send({
-			from: "webundance.com",
+			from: "webundance <support@webundance.com>",
 			to: ["1simeondunn@gmail.com"],
 			subject: `Contact Form Submission`,
 			html: `
@@ -28,9 +28,12 @@ export default defineEventHandler(async (event) => {
       `,
 		});
 
+		console.log("email data:", data);
+
 		return data;
 	}
 	catch (error) {
+		console.error(error);
 		return { error };
 	}
 });
