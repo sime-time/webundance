@@ -9,7 +9,7 @@ const automateService = {
 		"Digital waivers & forms",
 		"Payment processing & invoicing",
 	],
-	href: "#",
+	href: "/automation",
 };
 
 const websiteService = {
@@ -22,7 +22,7 @@ const websiteService = {
 		"Contact forms & booking systems",
 		"SEO-friendly structure",
 	],
-	href: "#",
+	href: "/website-upgrade",
 };
 </script>
 
