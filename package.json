@@ -29,6 +29,7 @@
 	"devDependencies": {
 		"@antfu/eslint-config": "^4.13.0",
 		"@iconify-json/lucide": "^1.2.42",
-		"eslint-plugin-format": "^1.0.1"
+		"eslint-plugin-format": "^1.0.1",
+		"resend": "^4.5.1"
 	}
 }

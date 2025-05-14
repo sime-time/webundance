@@ -19,13 +19,52 @@ const formState = reactive({
 });
 
 const toast = useToast();
+const loading = ref(false);
+const submitted = ref(false);
+
 async function onSubmit(event: FormSubmitEvent<ContactSchema>) {
-	toast.add({
-		title: "Message Sent",
-		description: "We'll get back to you shortly.",
-		color: "success",
-	});
-	console.log(event.data);
+	loading.value = true;
+	console.log("EVENT DATA", event.data);
+	try {
+		// make sure form input is valid
+		const validForm = ContactSchema.parse(formState);
+
+		// transform into FormData object
+		const formData = new FormData();
+		formData.append("name", validForm.name);
+		formData.append("business", validForm.business);
+		formData.append("email", validForm.email);
+		formData.append("message", validForm.message);
+
+		// send to API endpoint
+		const result = await $fetch("/api/send", {
+			method: "POST",
+			body: formData,
+		});
+
+		if (result.error) {
+			throw new Error("Failed to send message");
+		}
+
+		toast.add({
+			title: "Message Sent",
+			description: "We'll reach out to you shortly.",
+			color: "success",
+		});
+
+		submitted.value = true;
+	}
+	catch (err) {
+		console.error(err);
+		toast.add({
+			title: "Message Not Sent",
+			description: "Error occurred while sending message",
+			color: "error",
+		});
+	}
+	finally {
+		loading.value = false;
+	}
 }
 </script>
 
@@ -38,23 +77,30 @@ async function onSubmit(event: FormSubmitEvent<ContactSchema>) {
 			@submit.prevent="onSubmit"
 		>
 			<UFormField label="Name" name="name">
-				<UInput v-model="formState.name" class="w-full" placeholder="Your full name" />
+				<UInput v-model="formState.name" class="w-full" placeholder="Your full name" :disabled="submitted" />
 			</UFormField>
 
 			<UFormField label="Business" name="business">
-				<UInput v-model="formState.business" class="w-full" placeholder="Your business name" />
+				<UInput v-model="formState.business" class="w-full" placeholder="Your business name" :disabled="submitted" />
 			</UFormField>
 
 			<UFormField label="Email" name="email">
-				<UInput v-model="formState.email" class="w-full" placeholder="your@email.com" />
+				<UInput v-model="formState.email" class="w-full" placeholder="your@email.com" :disabled="submitted" />
 			</UFormField>
 
 			<UFormField label="What you need" name="message">
-				<UTextarea v-model="formState.message" class="w-full" placeholder="Tell me about your problems and what you're looking to achieve" />
+				<UTextarea v-model="formState.message" class="w-full" placeholder="Tell me about your problems and what you're looking to achieve" :disabled="submitted" />
 			</UFormField>
 
-			<UButton type="submit" size="xl" class="w-full justify-center">
-				Send Message
+			<UButton
+				type="submit"
+				size="xl"
+				class="w-full justify-center"
+				:loading="loading"
+				:disabled="submitted"
+			>
+				<span v-if="submitted">Message Sent</span>
+				<span v-else>Send Message</span>
 			</UButton>
 		</UForm>
 	</section>
