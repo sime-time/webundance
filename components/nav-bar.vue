@@ -20,7 +20,7 @@ const navLinks = [
 	{
 		id: 4,
 		label: "Automation",
-		href: "#",
+		href: "/automation",
 	},
 ];
 </script>

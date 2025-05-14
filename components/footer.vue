@@ -26,7 +26,7 @@ const currentYear = new Date().getFullYear();
 					</h3>
 					<ul class="space-y-3">
 						<li>
-							<NuxtLink to="#" class="hover:text-neutral-50 transition-colors">
+							<NuxtLink to="/automation" class="hover:text-neutral-50 transition-colors">
 								Admin Automation
 							</NuxtLink>
 						</li>
