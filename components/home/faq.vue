@@ -43,11 +43,11 @@ const faq = ref<AccordionItem[]>([
 
 <template>
 	<section id="faq-section" class="bg-neutral-100/80 flex justify-center py-32">
-		<div class="container mx-auto max-w-5xl text-center flex flex-col gap-6 px-5 md:px-0">
+		<div class="container mx-auto max-w-5xl text-center flex flex-col gap-3 px-5 md:px-0">
 			<h1 class="text-3xl lg:text-5xl font-bold">
 				FAQ
 			</h1>
-			<p class="text-xl lg:text-2xl ">
+			<p class="text-xl lg:text-2xl mb-4">
 				Common questions, answered.
 			</p>
 			<UAccordion :items="faq" />

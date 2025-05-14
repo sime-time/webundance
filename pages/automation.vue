@@ -1,3 +1,8 @@
 <template>
-	<h1>AI Automation</h1>
+	<main>
+		<AutomationHero />
+		<AutomationProblem />
+		<AutomationSolution />
+		<CallToAction />
+	</main>
 </template>

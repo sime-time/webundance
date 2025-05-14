@@ -10,7 +10,7 @@ const process = [
 		id: 2,
 		icon: "i-lucide-drafting-compass",
 		title: "Design",
-		description: "I prototype the solution so you can see the vision",
+		description: "I prototype the solution for you to see the vision.",
 	},
 	{
 		id: 3,
@@ -29,14 +29,14 @@ const process = [
 
 <template>
 	<section class="bg-gradient-to-b from-primary-100 to-neutral flex justify-center py-32">
-		<div class="container mx-auto max-w-4xl flex flex-col gap-6">
+		<div class="container mx-auto max-w-4xl flex flex-col gap-3">
 			<h1 class="text-3xl lg:text-5xl font-bold text-center">
 				Our Process
 			</h1>
 			<p class="text-xl lg:text-2xl text-center mb-4 px-3 md:px-0">
 				We follow a lean process with clear steps. Pivot until you're satisfied.
 			</p>
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-4">
 				<div v-for="step in process" :key="step.id">
 					<HomeProcessStep :id="step.id" :icon="step.icon" :title="step.title" :description="step.description" />
 				</div>

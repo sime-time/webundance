@@ -28,14 +28,14 @@ const websiteService = {
 
 <template>
 	<section class="bg-primary-100 flex justify-center py-32">
-		<div class="container mx-6 md:mx-auto max-w-5xl text-center flex flex-col gap-6">
+		<div class="container mx-6 md:mx-auto max-w-5xl text-center flex flex-col gap-3">
 			<h1 class="text-3xl md:text-5xl font-bold">
 				Services Tailored to You
 			</h1>
 			<p class="text-lg lg:text-2xl max-w-3xl mx-auto">
 				Choose the solution that best fits your business goals. Each service is custom-built to your specific requirements.
 			</p>
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
 				<HomeServiceCard :service="automateService" />
 				<HomeServiceCard :service="websiteService" />
 			</div>

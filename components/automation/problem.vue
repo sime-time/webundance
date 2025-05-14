@@ -2,23 +2,23 @@
 const problems = [
 	{
 		id: 1,
-		icon: "lucide:screen-share-off",
-		text: "Outdated, hard-to-use?",
+		icon: "lucide:phone-missed",
+		text: "Constantly chasing leads, manually answering emails and phone calls?",
 	},
 	{
 		id: 2,
-		icon: "lucide:ban",
-		text: "Doesn't work well on phones?",
+		icon: "lucide:calendar-x-2",
+		text: "Double bookings and no-shows?",
 	},
 	{
 		id: 3,
-		icon: "lucide:loader",
-		text: "Slow loading and frustrating to update?",
+		icon: "lucide:file-x",
+		text: "Struggle with invoicing or collecting waivers?",
 	},
 	{
 		id: 4,
-		icon: "lucide:user-round-x",
-		text: "Losing potential customers to competitors?",
+		icon: "lucide:user-round-pen",
+		text: "Manually tracking customer and employee information?",
 	},
 ];
 </script>
@@ -30,7 +30,7 @@ const problems = [
 				The Problem
 			</h1>
 			<p class="text-xl lg:text-2xl">
-				Does your website sound similar?
+				Sound familiar?
 			</p>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
 				<div v-for="problem in problems" :key="problem.id">

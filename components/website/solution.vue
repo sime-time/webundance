@@ -13,7 +13,7 @@ const solutions = [
 	{
 		id: 2,
 		icon: "lucide:tablet-smartphone",
-		text: "Mobile-First Design",
+		text: "Mobile-First",
 		list: [
 			"Responsive on all devices",
 			"Modern, professional design",
@@ -33,7 +33,7 @@ const solutions = [
 	{
 		id: 4,
 		icon: "lucide:mail",
-		text: "Built-in Contact Forms",
+		text: "Contact Forms",
 		list: [
 			"Customers reach you fast",
 			"Automated email follow-ups",
@@ -54,7 +54,7 @@ const solutions = [
 			</p>
 			<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mt-4">
 				<div v-for="solution in solutions" :key="solution.id">
-					<WebsiteSolutionCard :icon="solution.icon" :title="solution.text" :list="solution.list" />
+					<SolutionCard :icon="solution.icon" :title="solution.text" :list="solution.list" />
 				</div>
 			</div>
 		</div>

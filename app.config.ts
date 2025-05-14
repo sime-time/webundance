@@ -24,6 +24,15 @@ export default defineAppConfig({
 				size: "xl",
 			},
 		},
+		button: {
+			variants: {
+				size: {
+					xl: {
+						base: "px-5 py-3",
+					},
+				},
+			},
+		},
 		accordion: {
 			slots: {
 				root: "space-y-3",

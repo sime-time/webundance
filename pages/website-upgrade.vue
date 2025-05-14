@@ -3,5 +3,6 @@
 		<WebsiteHero />
 		<WebsiteProblem />
 		<WebsiteSolution />
+		<WebsitePricing />
 	</main>
 </template>

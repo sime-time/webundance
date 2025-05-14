@@ -36,7 +36,7 @@ defineProps<{
 				</div>
 			</ul>
 
-			<UButton :to="service.href" size="xl" class="w-full justify-center">
+			<UButton :to="service.href" size="lg" class="w-full justify-center">
 				Learn More
 				<UIcon name="lucide:arrow-right" class="h-4 w-4" />
 			</UButton>
