@@ -11,17 +11,17 @@ export default defineAppConfig({
 		},
 		formField: {
 			defaultVariants: {
-				size: "lg",
+				size: "xl",
 			},
 		},
 		input: {
 			defaultVariants: {
-				size: "lg",
+				size: "xl",
 			},
 		},
 		textarea: {
 			defaultVariants: {
-				size: "lg",
+				size: "xl",
 			},
 		},
 		accordion: {
