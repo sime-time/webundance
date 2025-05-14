@@ -65,10 +65,10 @@ const currentYear = new Date().getFullYear();
 				<div class="border-t border-neutral-500 mt-8 pt-8 text-sm flex flex-col md:flex-row justify-between col-span-full">
 					<p>&copy; {{ currentYear }} Webundance. All rights reserved.</p>
 					<div class="mt-4 md:mt-0">
-						<NuxtLink to="#" class="hover:text-neutral-50 mr-6">
+						<NuxtLink to="/privacy" class="hover:text-neutral-50 mr-6">
 							Privacy Policy
 						</NuxtLink>
-						<NuxtLink to="#" class="hover:text-neutral-50">
+						<NuxtLink to="/terms" class="hover:text-neutral-50">
 							Terms of Service
 						</NuxtLink>
 					</div>
