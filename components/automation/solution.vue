@@ -3,7 +3,7 @@ const solutions = [
 	{
 		id: 1,
 		icon: "lucide:mail",
-		title: "Auto Emails & SMS Texts",
+		title: "Emails & SMS Texts",
 		list: [
 			"Reminders to reduce no-shows",
 			"Automated follow-ups",
