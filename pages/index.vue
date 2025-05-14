@@ -4,6 +4,6 @@
 		<HomeServices />
 		<HomeProcess />
 		<HomeFaq />
-		<HomeCallToAction />
+		<CallToAction />
 	</main>
 </template>

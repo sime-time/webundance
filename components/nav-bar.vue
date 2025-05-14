@@ -15,7 +15,7 @@ const navLinks = [
 	{
 		id: 3,
 		label: "Website Upgrade",
-		href: "#",
+		href: "/website-upgrade",
 	},
 	{
 		id: 4,

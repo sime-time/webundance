@@ -31,7 +31,7 @@ const currentYear = new Date().getFullYear();
 							</NuxtLink>
 						</li>
 						<li>
-							<NuxtLink to="#" class="hover:text-neutral-50 transition-colors">
+							<NuxtLink to="/website-upgrade" class="hover:text-neutral-50 transition-colors">
 								Website Upgrade
 							</NuxtLink>
 						</li>
