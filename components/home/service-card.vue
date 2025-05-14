@@ -1,4 +1,13 @@
 <script setup lang="ts">
+import { UCard } from "#components";
+import { motion } from "motion-v";
+
+defineProps<{
+	service: Service;
+}>();
+
+const MotionCard = motion.create(UCard);
+
 interface Service {
 	icon: string;
 	title: string;
@@ -6,14 +15,16 @@ interface Service {
 	list: string[];
 	href: string;
 }
-
-defineProps<{
-	service: Service;
-}>();
 </script>
 
 <template>
-	<UCard class="shadow-md">
+	<MotionCard
+		:initial="{ opacity: 0, x: -40 }"
+		:while-in-view="{ opacity: 1, x: 0 }"
+		:viewport="{ once: true, amount: 0.7 }"
+		:transition="{ duration: 0.8, ease: 'easeOut' }"
+		class="shadow-md"
+	>
 		<div class="flex flex-col items-start gap-1 p-1 justify-between">
 			<UBadge size="xl" variant="soft" class="mb-4 text-4xl py-2">
 				<UIcon :name="service.icon" />
@@ -41,5 +52,5 @@ defineProps<{
 				<UIcon name="lucide:arrow-right" class="h-4 w-4" />
 			</UButton>
 		</div>
-	</UCard>
+	</MotionCard>
 </template>

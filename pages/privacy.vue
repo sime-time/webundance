@@ -111,7 +111,7 @@ const lastUpdated = "May 14, 2025";
 					Contact Us
 				</h2>
 				<p>
-					If you have any questions about this Privacy Policy, please contact us at privacy@webundance.com.
+					If you have any questions about this Privacy Policy, please contact us at support@webundance.com.
 				</p>
 			</section>
 		</div>

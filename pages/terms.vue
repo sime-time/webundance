@@ -133,7 +133,7 @@ const lastUpdated = "May 14, 2025";
 					10. Contact Information
 				</h2>
 				<p>
-					If you have any questions about these Terms, please contact us at terms@webundance.com.
+					If you have any questions about these Terms, please contact us at support@webundance.com.
 				</p>
 			</section>
 		</div>
