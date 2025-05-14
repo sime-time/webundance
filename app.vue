@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useSeoMeta({
-	title: "Webundance",
+	title: "Webundance | AI Automation and Web Development",
 	ogTitle: "Webundance | AI Automation and Web Development",
 	description: "AI automation and web development agency for Indiana businesses",
 	ogDescription: "AI automation and web development agency for Indiana businesses",

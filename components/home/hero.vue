@@ -7,7 +7,7 @@
 				<span class="text-primary">Less busywork.</span>
 			</h1>
 			<p class="text-xl lg:text-2xl px-3 md:px-0">
-				We build tools that save time and win customers.
+				We build systems that save time and win customers.
 			</p>
 			<div class="flex gap-5 justify-center">
 				<UButton to="/contact" size="xl">
