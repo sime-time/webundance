@@ -30,7 +30,7 @@ const navLinks = [
 		<div class="flex justify-between items-center p-4 mx-auto w-full max-w-5xl">
 			<!-- Logo -->
 			<NuxtLink to="/" class="flex gap-2 items-center cursor-pointer">
-				<img src="/favicon.ico" alt="webundance logo" class="size-12">
+				<img src="/favicon.ico" alt="webundance logo" width="48" height="48" class="size-12">
 				<h1 class="text-xl font-bold text-primary">
 					Webundance
 				</h1>
@@ -48,7 +48,7 @@ const navLinks = [
 				</UButton>
 			</div>
 
-			<button class="md:hidden" @click="() => (menuOpen = !menuOpen)">
+			<button aria-label="toggle navigation menu" class="md:hidden" @click="() => (menuOpen = !menuOpen)">
 				<div v-if="menuOpen" class="flex items-center">
 					<UIcon name="i-lucide-x" size="xl" class="size-7" />
 				</div>
