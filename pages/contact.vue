@@ -12,8 +12,8 @@
 					<p class="text-xl ">
 						Or if you prefer, you can schedule a call directly using the booking link.
 					</p>
-					<UButton to="/book-call" variant="outline" size="xl" class="w-fit">
-						Book a Time
+					<UButton to="/book-call" variant="subtle" size="xl" class="w-fit">
+						1-on-1 Video Call
 					</UButton>
 					<div class="flex items-center gap-2">
 						<p class="font-semibold text-xl">
