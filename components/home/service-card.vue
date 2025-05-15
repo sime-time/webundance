@@ -39,12 +39,12 @@ interface Service {
 			</p>
 
 			<ul class="space-y-2 my-4 text-start">
-				<div v-for="(item, index) in service.list" :key="index">
-					<li class="flex items-center">
+				<li v-for="(item, index) in service.list" :key="index">
+					<div class="flex items-center">
 						<UIcon name="i-lucide-dot" class="text-2xl" />
 						<span>{{ item }}</span>
-					</li>
-				</div>
+					</div>
+				</li>
 			</ul>
 
 			<UButton :to="service.href" size="lg" class="w-full justify-center">

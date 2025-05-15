@@ -10,9 +10,9 @@ const currentYear = new Date().getFullYear();
 				<div class="col-span-2">
 					<NuxtLink to="/" class="flex gap-2 items-center w-fit">
 						<img src="/favicon.ico" alt="webundance logo" class="size-10">
-						<h3 class="text-primary-400 font-bold text-xl">
+						<h1 class="text-primary-400 font-bold text-xl">
 							Webundance
-						</h3>
+						</h1>
 					</NuxtLink>
 					<p class="max-w-xs">
 						Custom websites and AI automation solutions for local Indiana businesses. Save time, look professional, and grow your business.
@@ -21,9 +21,9 @@ const currentYear = new Date().getFullYear();
 
 				<!-- Service Links -->
 				<div>
-					<h3 class="font-semibold text-neutral-50 mb-4">
+					<h2 class="font-semibold text-neutral-50 mb-4">
 						Services
-					</h3>
+					</h2>
 					<ul class="space-y-3">
 						<li>
 							<NuxtLink to="/automation" class="hover:text-neutral-50 transition-colors">
@@ -40,9 +40,9 @@ const currentYear = new Date().getFullYear();
 
 				<!-- Company Links -->
 				<div>
-					<h3 class="font-semibold text-neutral-50 mb-4">
+					<h2 class="font-semibold text-neutral-50 mb-4">
 						Company
-					</h3>
+					</h2>
 					<ul class="space-y-3">
 						<li>
 							<NuxtLink to="/about" class="hover:text-neutral-50 transition-colors">

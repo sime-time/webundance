@@ -26,12 +26,12 @@ defineProps<{
 
 			<div v-if="list">
 				<ul class="space-y-2 my-4 text-start">
-					<div v-for="(item, index) in list" :key="index">
-						<li class="flex items-start">
+					<li v-for="(item, index) in list" :key="index">
+						<div class="flex items-start">
 							<UIcon name="i-lucide-dot" class="text-2xl" />
 							<span>{{ item }}</span>
-						</li>
-					</div>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
