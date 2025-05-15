@@ -27,8 +27,7 @@ export default defineEventHandler(async (event) => {
         <p>Message:<br> ${message}</p>
       `,
 		});
-
-		console.log("email data:", data);
+		console.log("email data", data);
 
 		return data;
 	}
