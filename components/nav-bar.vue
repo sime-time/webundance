@@ -30,7 +30,7 @@ const navLinks = [
 		<div class="flex justify-between items-center p-4 mx-auto w-full max-w-5xl">
 			<!-- Logo -->
 			<NuxtLink to="/" class="flex gap-2 items-center cursor-pointer">
-				<img src="/favicon.ico" alt="logo" class="size-12">
+				<img src="/favicon.ico" alt="webundance logo" class="size-12">
 				<h1 class="text-xl font-bold text-primary">
 					Webundance
 				</h1>

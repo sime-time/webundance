@@ -48,7 +48,7 @@ interface Service {
 			</ul>
 
 			<UButton :to="service.href" size="lg" class="w-full justify-center">
-				Learn More
+				How this works
 				<UIcon name="lucide:arrow-right" class="h-4 w-4" />
 			</UButton>
 		</div>

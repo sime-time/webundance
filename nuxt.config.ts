@@ -21,4 +21,12 @@ export default defineNuxtConfig({
 			weights: [400, 600, 700],
 		},
 	},
+	app: {
+		head: {
+			title: "Webundance",
+			htmlAttrs: {
+				lang: "en",
+			},
+		},
+	},
 });

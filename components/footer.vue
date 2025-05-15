@@ -9,7 +9,7 @@ const currentYear = new Date().getFullYear();
 				<!-- Logo -->
 				<div class="col-span-2">
 					<NuxtLink to="/" class="flex gap-2 items-center w-fit">
-						<img src="/favicon.ico" class="size-10">
+						<img src="/favicon.ico" alt="webundance logo" class="size-10">
 						<h3 class="text-primary-400 font-bold text-xl">
 							Webundance
 						</h3>
