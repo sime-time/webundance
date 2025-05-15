@@ -13,7 +13,6 @@
 		<div class="flex gap-5 justify-center mt-4">
 			<UButton to="/contact" size="xl">
 				Get Started
-				<UIcon name="lucide:arrow-right" class="h-4 w-4" />
 			</UButton>
 			<UButton
 				to="/book-call"
@@ -23,6 +22,11 @@
 			>
 				Book a Call
 			</UButton>
+		</div>
+		<div class="animate-bounce mt-8">
+			<UBadge class="w-fit rounded-full p-3" color="primary" variant="soft">
+				<UIcon name="i-lucide-arrow-down" class="text-2xl" />
+			</UBadge>
 		</div>
 	</HeroLayout>
 </template>
