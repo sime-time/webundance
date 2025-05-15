@@ -4,7 +4,7 @@
 			class="text-4xl lg:text-6xl font-bold"
 		>
 			Fast websites.
-			AI automation.<br>
+			Auto-booking.<br>
 			<span class="text-primary">Less busywork.</span>
 		</h1>
 		<p class="text-xl lg:text-2xl px-3 md:px-0">
