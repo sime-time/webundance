@@ -25,7 +25,7 @@ const problems = [
 </script>
 
 <template>
-	<section class="bg-primary-100 flex flex-col items-center justify-between gap-8 py-32 px-6">
+	<section id="pain-section" class="bg-primary-100 flex flex-col items-center justify-between gap-8 py-32 px-6">
 		<div class="container  mx-auto max-w-5xl text-center flex flex-col gap-3">
 			<h1 class="text-3xl lg:text-5xl font-bold">
 				You're a Coach, <span class="underline underline-offset-5">Not a Bill Collector</span>

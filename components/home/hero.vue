@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const nextSection = document.getElementById("pain-section");
+const scrollDown = () => nextSection?.scrollIntoView({ behavior: "smooth" });
+</script>
+
 <template>
 	<HeroLayout>
 		<h1
@@ -16,9 +21,9 @@
 			</UButton>
 		</div>
 		<div class=" absolute bottom-2 animate-bounce mt-8 opacity-80">
-			<UBadge class="w-fit rounded-full p-3" color="primary" variant="soft">
+			<UButton class="w-fit rounded-full p-3 cursor-pointer" color="primary" variant="soft" @click="scrollDown">
 				<UIcon name="i-lucide-arrow-down" class="text-2xl" />
-			</UBadge>
+			</UButton>
 		</div>
 	</HeroLayout>
 </template>

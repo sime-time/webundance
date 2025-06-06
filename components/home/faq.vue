@@ -8,11 +8,11 @@ const faq = ref<AccordionItem[]>([
 	},
 	{
 		label: "What's it cost?",
-		content: "Websites start at $600. Automation starts at $800. Final quote depends on scope.",
+		content: "Websites start at $200. Automation starts at $497. Final quote depends on scope.",
 	},
 	{
 		label: "How long does a project take?",
-		content: "Most projects take 1-2 weeks. Bigger builds, 3-4.",
+		content: "Most projects take 3-4 weeks. Bigger systems, 6-8.",
 	},
 	{
 		label: "Do I need to know tech?",
@@ -28,7 +28,7 @@ const faq = ref<AccordionItem[]>([
 	},
 	{
 		label: "What tech do you use?",
-		content: "Nuxt for web development, n8n for AI automation, Stripe for payments, and other modern tools that load fast and work clean.",
+		content: "Nuxt.js to build fast websites, n8n for AI automation, Square/Stripe for payments, and other modern tools that load fast and work clean.",
 	},
 	{
 		label: "How do we start?",

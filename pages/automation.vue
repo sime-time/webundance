@@ -3,7 +3,7 @@
 		<AutomationHero />
 		<AutomationProblem />
 		<AutomationSolution />
-		<AutomationPricing />
+		<Pricing />
 		<CallToAction />
 	</main>
 </template>
