@@ -1,6 +1,8 @@
 <script setup lang="ts">
-const nextSection = document.getElementById("pain-section");
-const scrollDown = () => nextSection?.scrollIntoView({ behavior: "smooth" });
+function scrollDown() {
+	const nextSection = document.getElementById("pain-section");
+	nextSection?.scrollIntoView({ behavior: "smooth" });
+}
 </script>
 
 <template>
