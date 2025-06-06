@@ -5,6 +5,7 @@
 		<HomeServices />
 		<HomeProcess />
 		<HomeFaq />
+		<Pricing />
 		<CallToAction />
 	</main>
 </template>

@@ -38,7 +38,7 @@ const list = [
 				</h2>
 			</div>
 
-			<ul class="grid grid-cols-1 md:grid-cols-2 my-9 gap-5 gap-x-16">
+			<ul class="grid grid-cols-1 md:grid-cols-2 my-9 gap-5 gap-x-18">
 				<li v-for="(item, index) in list" :key="index">
 					<div class="flex items-center font-semibold gap-2">
 						<UIcon :name="item.icon" class="text-2xl text-primary" />
