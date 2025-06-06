@@ -72,7 +72,7 @@ const pricingPlans = [
 </script>
 
 <template>
-	<section class="py-16 md:py-24 bg-neutral-50 dark:bg-neutral-900">
+	<section class="py-16 md:py-24 bg-neutral-200">
 		<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="text-center mb-12 md:mb-16">
 				<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">

@@ -28,7 +28,7 @@ const process = [
 </script>
 
 <template>
-	<section class="bg-gradient-to-b from-white to-neutral-100/80 flex justify-center py-32">
+	<section class="bg-gradient-to-b from-white to-neutral-200 flex justify-center py-32">
 		<div class="container mx-auto max-w-4xl flex flex-col gap-3">
 			<h1 class="text-3xl lg:text-5xl font-bold text-center">
 				Our Process

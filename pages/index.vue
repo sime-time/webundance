@@ -4,8 +4,8 @@
 		<HomePain />
 		<HomeServices />
 		<HomeProcess />
-		<HomeFaq />
 		<Pricing />
+		<HomeFaq />
 		<CallToAction />
 	</main>
 </template>
