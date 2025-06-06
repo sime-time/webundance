@@ -16,7 +16,7 @@
 				variant="outline"
 				class="bg-white"
 			>
-				Free Consultation
+				Free Walkthrough
 			</UButton>
 		</div>
 	</HeroLayout>

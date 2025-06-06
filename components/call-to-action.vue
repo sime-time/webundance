@@ -8,7 +8,7 @@
 				Let's talk about how I can help you automate tasks and improve your online presence.
 			</p>
 			<div class="flex gap-5 justify-center mt-4">
-				<UButton to="/book-call" size="xl" variant="outline" color="neutral">
+				<UButton to="/contact" size="xl" variant="outline" color="neutral">
 					Set Up Your System
 					<UIcon name="lucide:arrow-right" class="h-4 w-4" />
 				</UButton>

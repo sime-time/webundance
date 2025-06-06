@@ -18,7 +18,7 @@ function scrollDown() {
 			No more texts. No more chasing. No more stress.
 		</p>
 		<div class="flex gap-5 justify-center mt-4">
-			<UButton to="/book-call" size="xl">
+			<UButton to="/contact" size="xl">
 				Set Up Your System
 			</UButton>
 		</div>
