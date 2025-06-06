@@ -3,7 +3,7 @@ const currentYear = new Date().getFullYear();
 </script>
 
 <template>
-	<footer class="bg-neutral-900 text-neutral-400 pt-16 pb-8">
+	<footer class="bg-neutral-900 text-neutral-300 pt-16 pb-8">
 		<div class="container px-3 md:px-0 mx-auto max-w-5xl">
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-y-8">
 				<!-- Logo -->
@@ -15,7 +15,7 @@ const currentYear = new Date().getFullYear();
 						</h1>
 					</NuxtLink>
 					<p class="max-w-xs">
-						Custom websites and AI automation solutions for local Indiana businesses. Save time, look professional, and grow your business.
+						Custom websites and automation solutions for local Indiana gyms. Save time, look professional, and grow your business.
 					</p>
 				</div>
 

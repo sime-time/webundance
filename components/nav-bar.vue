@@ -43,7 +43,7 @@ const navLinks = [
 						{{ navLink.label }}
 					</NuxtLink>
 				</div>
-				<UButton to="/contact" class="text-base" size="lg">
+				<UButton to="/contact" class="text-base" size="lg" variant="subtle">
 					Get Started
 				</UButton>
 			</div>

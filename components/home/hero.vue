@@ -3,27 +3,19 @@
 		<h1
 			class="text-4xl lg:text-6xl font-bold"
 		>
-			Fast websites.
-			Auto-booking.<br>
-			<span class="text-primary">Less busywork.</span>
+			Run Your Gym on
+			<span class="text-primary">Auto-Pilot.</span>
 		</h1>
-		<p class="text-xl lg:text-2xl px-3 md:px-0">
-			We build systems that save time and win customers.
+		<p class="text-base lg:text-2xl max-w-lg">
+			Automate signups, waivers, and payments.<br>
+			No more texts. No more chasing. No more stress.
 		</p>
 		<div class="flex gap-5 justify-center mt-4">
-			<UButton to="/contact" size="xl">
-				Get Started
-			</UButton>
-			<UButton
-				to="/book-call"
-				size="xl"
-				variant="outline"
-				class="bg-white"
-			>
-				Book a Call
+			<UButton to="/book-call" size="xl">
+				Set Up Your System
 			</UButton>
 		</div>
-		<div class="animate-bounce mt-8">
+		<div class=" absolute bottom-2 animate-bounce mt-8 opacity-80">
 			<UBadge class="w-fit rounded-full p-3" color="primary" variant="soft">
 				<UIcon name="i-lucide-arrow-down" class="text-2xl" />
 			</UBadge>

@@ -15,10 +15,6 @@ const faq = ref<AccordionItem[]>([
 		content: "Most projects take 1-2 weeks. Bigger builds, 3-4.",
 	},
 	{
-		label: "Do you only work with local businesses?",
-		content: "I work with anyone, but I prioritize businesses in Indianapolis and Carmel, Indiana.",
-	},
-	{
 		label: "Do I need to know tech?",
 		content: "No. You tell me what you need. I handle the rest.",
 	},

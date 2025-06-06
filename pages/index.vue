@@ -1,6 +1,7 @@
 <template>
 	<main>
 		<HomeHero />
+		<HomePain />
 		<HomeServices />
 		<HomeProcess />
 		<HomeFaq />
