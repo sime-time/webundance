@@ -2,25 +2,24 @@
 const problems = [
 	{
 		id: 1,
-		icon: "lucide:user-x",
-		text: "Members forgetting to pay?",
+		icon: "lucide:screen-share-off",
+		text: "Outdated, hard-to-use?",
 	},
 	{
 		id: 2,
-		icon: "lucide:circle-help",
-		text: "Losing track of who's already paid?",
+		icon: "lucide:ban",
+		text: "Doesn't work well on phones?",
 	},
 	{
 		id: 3,
-		icon: "lucide:message-circle-x",
-		text: "No one wants to talk about money?",
+		icon: "lucide:loader",
+		text: "Slow loading and frustrating to update?",
 	},
 	{
-		id: 3,
-		icon: "lucide:file-pen",
-		text: "Writing everything on paper?",
+		id: 4,
+		icon: "lucide:user-round-x",
+		text: "Losing customers to competitors?",
 	},
-
 ];
 </script>
 
@@ -28,10 +27,10 @@ const problems = [
 	<section id="pain-section" class="bg-primary-100 flex flex-col items-center justify-between gap-8 py-32 px-6">
 		<div class="container  mx-auto max-w-5xl text-center flex flex-col gap-3">
 			<h1 class="text-3xl lg:text-5xl font-bold">
-				You're a Coach, <span class="underline underline-offset-5">Not a Bill Collector</span>
+				Your Website Should <span class="underline underline-offset-5">Make You Money</span>
 			</h1>
 			<p class="text-xl lg:text-2xl mt-2">
-				Tired of these problems?
+				Does your website sound familiar?
 			</p>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
 				<div v-for="problem in problems" :key="problem.id">
@@ -40,7 +39,7 @@ const problems = [
 			</div>
 		</div>
 		<UButton to="/contact" size="xl">
-			Fix This Now
+			Solve these problems
 			<UIcon name="lucide:arrow-right" class="h-4 w-4" />
 		</UButton>
 	</section>

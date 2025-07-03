@@ -10,16 +10,14 @@ function scrollDown() {
 		<h1
 			class="text-4xl lg:text-6xl font-bold"
 		>
-			Run Your Gym on
-			<span class="text-primary">Auto-Pilot.</span>
+			Professional Websites.<br><span class="text-primary">Personal Service.</span>
 		</h1>
-		<p class="text-base lg:text-2xl max-w-lg">
-			Automate signups, waivers, and payments.<br>
-			No more texts. No more chasing. No more stress.
+		<p class="text-base lg:text-2xl max-w-lg opacity-80">
+			We handle the tech. You get a fast, flexible site designed to grow .
 		</p>
 		<div class="flex gap-5 justify-center mt-4">
 			<UButton to="/contact" size="xl">
-				Set Up Your System
+				Get Free Consultation
 			</UButton>
 		</div>
 		<div class=" absolute bottom-2 animate-bounce mt-8 opacity-80">

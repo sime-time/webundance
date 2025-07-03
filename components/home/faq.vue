@@ -8,11 +8,11 @@ const faq = ref<AccordionItem[]>([
 	},
 	{
 		label: "What's it cost?",
-		content: "Websites start at $200. Automation starts at $497. Final quote depends on scope.",
+		content: "Websites start at $600. Final quote depends on scope.",
 	},
 	{
 		label: "How long does a project take?",
-		content: "Most projects take 3-4 weeks. Bigger systems, 6-8.",
+		content: "Small websites take less than 1 week. Bigger projects take 3-6 weeks.",
 	},
 	{
 		label: "Do I need to know tech?",

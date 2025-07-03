@@ -2,24 +2,25 @@
 const problems = [
 	{
 		id: 1,
-		icon: "lucide:screen-share-off",
-		text: "Outdated, hard-to-use?",
+		icon: "lucide:server-off",
+		text: "Is your website broken?",
 	},
 	{
 		id: 2,
-		icon: "lucide:ban",
-		text: "Doesn't work well on phones?",
+		icon: "lucide:search-x",
+		text: "Not showing up on Google?",
 	},
 	{
 		id: 3,
-		icon: "lucide:loader",
-		text: "Slow loading and frustrating to update?",
+		icon: "lucide:smartphone",
+		text: "Looks bad on mobile?",
 	},
 	{
-		id: 4,
-		icon: "lucide:user-round-x",
-		text: "Losing customers to competitors?",
+		id: 3,
+		icon: "lucide:circle-help",
+		text: "Hard to navigate?",
 	},
+
 ];
 </script>
 

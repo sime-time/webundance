@@ -15,7 +15,7 @@ const currentYear = new Date().getFullYear();
 						</h1>
 					</NuxtLink>
 					<p class="max-w-xs">
-						Custom websites and automation solutions for local Indiana gyms. Save time, look professional, and grow your business.
+						Custom websites and automation solutions for local Indiana businesses. Save time, look professional, and grow your business.
 					</p>
 				</div>
 
