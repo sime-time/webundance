@@ -13,7 +13,7 @@ function scrollDown() {
 			Professional Websites.<br><span class="text-primary">Personal Service.</span>
 		</h1>
 		<p class="text-base lg:text-2xl max-w-lg opacity-80">
-			We handle the tech. You get a fast, flexible site designed to grow .
+			We handle the tech. You get a fast, flexible site designed to grow.
 		</p>
 		<div class="flex gap-5 justify-center mt-4">
 			<UButton to="/contact" size="xl">

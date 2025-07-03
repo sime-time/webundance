@@ -1,9 +1,9 @@
 <script setup lang="ts">
 useSeoMeta({
-	title: "Webundance | AI Automation and Web Development",
-	ogTitle: "Webundance | AI Automation and Web Development",
-	description: "AI automation and web development agency for Indiana businesses",
-	ogDescription: "AI automation and web development agency for Indiana businesses",
+	title: "Webundance | Indy Web Development",
+	ogTitle: "Webundance | Indy Web Development",
+	description: "Web development services for Indiana businesses",
+	ogDescription: "Web development services for Indiana businesses",
 	ogImage: "/images/logo.svg",
 	twitterCard: "summary",
 });
