@@ -10,7 +10,7 @@ defineProps<{
 <template>
 	<UCard class="shadow-md bg-white h-full">
 		<div class="flex flex-col items-start gap-1 justify-between">
-			<div class="flex flex-col md:flex-row items-center gap-3 ">
+			<div class="flex items-center gap-3 ">
 				<UBadge color="success" size="xl" variant="soft" class="text-4xl py-2">
 					<UIcon :name="icon" />
 				</UBadge>

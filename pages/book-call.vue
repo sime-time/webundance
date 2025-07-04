@@ -5,6 +5,14 @@ const options = {
 		primaryColor: "10b981",
 	},
 };
+
+useSeoMeta({
+	title: "Webundance | Book a Call",
+	ogTitle: "Book a Call",
+	description: "Free website consultation for Indiana businesses",
+	ogDescription: "Free website consultation",
+	ogImage: "/images/logo.svg",
+});
 </script>
 
 <template>
