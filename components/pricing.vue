@@ -80,6 +80,7 @@ const pricingPlans = [
 					v-for="plan in pricingPlans"
 					:key="plan.id"
 					class="flex flex-col"
+					:class="plan.highlight ? 'shadow-[0_5px_13px_13px] shadow-primary-300/70' : ''"
 					:ui="{
 						body: 'flex-grow flex flex-col', // Ensures body takes available space
 						footer: 'mt-auto', // Pushes footer to the bottom
@@ -123,7 +124,7 @@ const pricingPlans = [
 								block
 								size="lg"
 								class="mt-6"
-								:variant="plan.highlight ? 'solid' : 'outline'"
+								:variant="plan.highlight ? 'solid' : 'subtle'"
 							>
 								{{ plan.ctaText }}
 								<UIcon name="i-lucide-arrow-right" class="ml-2 size-4" />
