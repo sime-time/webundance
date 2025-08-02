@@ -13,7 +13,7 @@ defineProps<{
 
 <template>
 	<UCard>
-		<div class="flex flex-col gap-6 px-1">
+		<div class="flex flex-col gap-6 p-1">
 			<div class="flex flex-col items-start">
 				<UIcon :name="icon" class="text-primary text-3xl mb-2" />
 				<h2 class="font-semibold text-xl">
