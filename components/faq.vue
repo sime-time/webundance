@@ -8,7 +8,7 @@ const faq = ref<AccordionItem[]>([
 	},
 	{
 		label: "What do you automate?",
-		content: "Bookings. Forms. Emails. Follow-ups. You name it.",
+		content: "Phone Calls. Bookings. Forms. Emails. Follow-ups. You name it.",
 	},
 	{
 		label: "Do I need to know tech?",

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const items = [
 	"/images/simeon-suit.png",
-	"/images/simeon-boxing.png",
+	"/images/simeon-boxing.webp",
 	"/images/simeon-nature.png",
 ];
 </script>
