@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { motion } from "motion-v";
-
 const items = [
 	"/images/simeon-suit.png",
 	"/images/simeon-boxing.png",
@@ -12,12 +10,7 @@ const items = [
 	<main class="py-16 md:py-32 bg-gradient-to-t from-primary-100 to-white">
 		<div class="container mx-auto max-w-5xl px-6 md:px-0">
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-				<motion.section
-					:initial="{ opacity: 0, x: -20, y: 20 }"
-					:animate="{ opacity: 1, x: 0, y: 0 }"
-					:transition="{ duration: 0.8, ease: 'easeOut' }"
-					class="text-lg md:text-xl flex flex-col gap-6"
-				>
+				<section class="text-lg md:text-xl flex flex-col gap-6">
 					<h1 class="font-bold text-3xl md:text-4xl">
 						I build for local businesses
 					</h1>
@@ -33,7 +26,7 @@ const items = [
 					<UButton to="/contact" class="w-fit" size="xl">
 						Work With Me
 					</UButton>
-				</motion.section>
+				</section>
 				<section>
 					<UCarousel
 						v-slot="{ item }"

@@ -16,7 +16,7 @@ function scrollDown() {
 			</p>
 			<div class="flex gap-5 justify-center mt-4">
 				<UButton to="/contact" size="xl">
-					Get My System
+					Get Your System
 				</UButton>
 			</div>
 			<div class=" absolute bottom-2 animate-bounce mt-8 opacity-80">

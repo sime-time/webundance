@@ -2,32 +2,37 @@
 const tiers = [
 	{
 		id: 1,
-		icon: "lucide:briefcase-business",
-		title: "Basic",
-		description: "Start with a digital presence",
-		price: "199",
-		recurring: "/month",
+		icon: "lucide:rocket",
+		title: "Launch",
+		description: "Basic website & hosting",
+		price: "$199",
+		recurring: "per month",
 		buttonText: "Get Started",
 		highlighted: false,
 		features: [
 			"Mobile-Friendly Website",
-			"Blazingly Fast",
+			"Fast Page Load Speed",
 			"Unlimited Updates",
+			"Contact Page",
+			"SEO",
 		],
 	},
 	{
 		id: 2,
 		icon: "lucide:users-round",
 		title: "Partnership",
-		description: "Website with automated booking",
-		price: "499",
-		recurring: "+5% revenue share",
-		buttonText: "Partner with Us",
+		description: "Website with automated payment system",
+		price: "$499",
+		recurring: "+5% per online transaction",
+		buttonText: "Work with Me",
 		highlighted: true,
 		features: [
+			"Everything in Launch",
 			"Booking & Scheduling",
+			"Membership Subscriptions",
 			"Business Domain Email",
 			"Google Maps Integration",
+			"Live Google Reviews",
 		],
 	},
 	{
@@ -35,14 +40,16 @@ const tiers = [
 		icon: "lucide:building",
 		title: "Premium",
 		description: "For more complex businesses",
-		price: "8,000",
-		recurring: "/year",
+		price: "$8,000",
+		recurring: "per year",
 		buttonText: "Get Premium",
 		highlighted: false,
 		features: [
-			"AI Phone Call Automation",
-			"Ecommerce",
-			"API Integration",
+			"Everything in Partnership",
+			"AI Automation",
+			"Content Mangagement System",
+			"Custom API Integrations",
+			"Voiced AI Appointment Setter",
 		],
 	},
 ];
@@ -57,7 +64,7 @@ const tiers = [
 			<p class="text-xl lg:text-2xl mb-4">
 				Simple, budget-friendly pricing options.
 			</p>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<div v-for="tier in tiers" :key="tier.id">
 					<PricingTier v-bind="tier" />
 				</div>

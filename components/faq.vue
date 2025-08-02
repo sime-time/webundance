@@ -3,10 +3,6 @@ import type { AccordionItem } from "@nuxt/ui";
 
 const faq = ref<AccordionItem[]>([
 	{
-		label: "How much does it cost?",
-		content: "Websites start at $500. Final quote depends on scope.",
-	},
-	{
 		label: "How long does a project take?",
 		content: "Small websites take less than 1 week. Bigger projects take 3-6 weeks.",
 	},

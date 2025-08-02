@@ -12,10 +12,15 @@ defineProps<{
 </script>
 
 <template>
-	<UCard>
+	<UCard :class="highlighted ? 'outline-3 outline-primary shadow-primary shadow-lg' : 'shadow-lg'">
 		<div class="flex flex-col gap-6 p-1">
 			<div class="flex flex-col items-start">
-				<UIcon :name="icon" class="text-primary text-3xl mb-2" />
+				<div class="flex items-start justify-between w-full">
+					<UIcon :name="icon" class="text-primary text-3xl mb-2" />
+					<UBadge v-if="highlighted">
+						Recommended
+					</UBadge>
+				</div>
 				<h2 class="font-semibold text-xl">
 					{{ title }}
 				</h2>
@@ -25,7 +30,7 @@ defineProps<{
 			</div>
 
 			<p class="flex flex-col gap-2">
-				<span class="text-5xl font-semibold">${{ price }}</span>
+				<span class="text-5xl font-semibold">{{ price }}</span>
 				<span class="text-base text-neutral-500">{{ recurring }}</span>
 			</p>
 

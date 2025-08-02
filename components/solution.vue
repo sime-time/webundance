@@ -2,16 +2,6 @@
 const solutions = [
 	{
 		id: 1,
-		icon: "lucide:search-code",
-		title: "SEO Friendly",
-		list: [
-			"Clear page structure",
-			"Easier to find on Google",
-			"Clean, crawlable code",
-		],
-	},
-	{
-		id: 2,
 		icon: "lucide:tablet-smartphone",
 		title: "Mobile-First",
 		list: [
@@ -21,13 +11,23 @@ const solutions = [
 		],
 	},
 	{
-		id: 3,
+		id: 2,
 		icon: "lucide:zap",
 		title: "Lightning Fast",
 		list: [
 			"Loads in seconds",
 			"Built with modern tech",
 			"No bloated add-ons",
+		],
+	},
+	{
+		id: 3,
+		icon: "lucide:calendar-days",
+		title: "Booking & Payments",
+		list: [
+			"24/7 online booking, branded to you",
+			"Payment collection and subscriptions",
+			"Syncs with your calendar availability",
 		],
 	},
 	{
@@ -42,12 +42,12 @@ const solutions = [
 	},
 	{
 		id: 5,
-		icon: "lucide:calendar-days",
-		title: "Booking & Payments",
+		icon: "lucide:search-code",
+		title: "SEO Friendly",
 		list: [
-			"24/7 online booking, branded to you",
-			"Payment collection and subscriptions",
-			"Syncs with your calendar availability",
+			"Clear page structure",
+			"Easier to find on Google",
+			"Clean, crawlable code",
 		],
 	},
 	{

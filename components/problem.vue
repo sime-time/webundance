@@ -59,7 +59,7 @@ const problems = [
 			</div>
 		</div>
 		<UButton to="/contact" size="xl">
-			Solve these problems
+			Solve These Problems
 			<UIcon name="lucide:arrow-right" class="h-4 w-4" />
 		</UButton>
 	</section>
