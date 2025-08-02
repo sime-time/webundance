@@ -14,20 +14,20 @@ const navLinks = [
 	},
 	{
 		id: 3,
-		label: "Website Upgrade",
-		href: "/website-upgrade",
+		label: "Pricing",
+		href: "/#pricing",
 	},
 	{
 		id: 4,
-		label: "Automation",
-		href: "/automation",
+		label: "FAQ",
+		href: "/#faq",
 	},
 ];
 </script>
 
 <template>
 	<nav class="sticky top-0 z-20 border-neutral-200 backdrop-blur-sm bg-white">
-		<div class="flex justify-between items-center p-4 mx-auto w-full max-w-5xl">
+		<div class="flex justify-between items-center p-4 mx-auto w-full max-w-6xl">
 			<!-- Logo -->
 			<NuxtLink to="/" class="flex gap-2 items-center cursor-pointer">
 				<img src="/favicon.ico" alt="webundance logo" width="48" height="48" class="size-12">

@@ -1,11 +1,11 @@
 <template>
 	<main>
-		<HomeHero />
-		<HomePain />
-		<HomeServices />
-		<HomeProcess />
+		<Hero />
+		<Problem />
+		<Solution />
+		<Process />
 		<Pricing />
-		<HomeFaq />
+		<Faq />
 		<CallToAction />
 	</main>
 </template>

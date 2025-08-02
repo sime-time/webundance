@@ -28,7 +28,7 @@ const process = [
 </script>
 
 <template>
-	<section class="bg-gradient-to-b from-white to-neutral-200 flex justify-center py-32">
+	<section class="bg-neutral-900 flex justify-center py-32 text-neutral-100">
 		<div class="container mx-auto max-w-4xl flex flex-col gap-3">
 			<h1 class="text-3xl lg:text-5xl font-bold text-center">
 				Our Process
@@ -38,7 +38,7 @@ const process = [
 			</p>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-4">
 				<div v-for="step in process" :key="step.id">
-					<HomeProcessStep :id="step.id" :icon="step.icon" :title="step.title" :description="step.description" />
+					<ProcessStep :id="step.id" :icon="step.icon" :title="step.title" :description="step.description" />
 				</div>
 			</div>
 		</div>

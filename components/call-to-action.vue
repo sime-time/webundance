@@ -5,7 +5,7 @@
 				Ready to make your business more efficient?
 			</h1>
 			<p class="text-xl lg:text-2xl">
-				Let's talk about how I can help you automate tasks and improve your online presence.
+				Let's talk about how I can help you automate bookings and improve your online presence.
 			</p>
 			<div class="flex gap-5 justify-center mt-4">
 				<UButton to="/contact" size="xl" variant="outline" color="neutral">

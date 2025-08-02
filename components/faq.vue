@@ -3,16 +3,16 @@ import type { AccordionItem } from "@nuxt/ui";
 
 const faq = ref<AccordionItem[]>([
 	{
-		label: "What do you automate?",
-		content: "Bookings. Forms. Emails. Invoices. Follow-ups. You name it.",
-	},
-	{
-		label: "What's it cost?",
-		content: "Websites start at $600. Final quote depends on scope.",
+		label: "How much does it cost?",
+		content: "Websites start at $500. Final quote depends on scope.",
 	},
 	{
 		label: "How long does a project take?",
 		content: "Small websites take less than 1 week. Bigger projects take 3-6 weeks.",
+	},
+	{
+		label: "What do you automate?",
+		content: "Bookings. Forms. Emails. Follow-ups. You name it.",
 	},
 	{
 		label: "Do I need to know tech?",
@@ -28,7 +28,7 @@ const faq = ref<AccordionItem[]>([
 	},
 	{
 		label: "What tech do you use?",
-		content: "Nuxt.js to build fast websites, n8n for AI automation, Square/Stripe for payments, and other modern tools that load fast and work clean.",
+		content: "Nuxt.js to build fast websites, Cloudflare for secure hosting, Square/Stripe for payments, and other modern tools that load fast and work clean.",
 	},
 	{
 		label: "How do we start?",
@@ -38,7 +38,7 @@ const faq = ref<AccordionItem[]>([
 </script>
 
 <template>
-	<section id="faq-section" class="bg-neutral-100/80 flex justify-center py-32">
+	<section id="faq" class="bg-gradient-to-b from-neutral-100 to-primary flex justify-center py-32">
 		<div class="container mx-auto max-w-5xl text-center flex flex-col gap-3 px-5 md:px-0">
 			<h1 class="text-3xl lg:text-5xl font-bold">
 				FAQ

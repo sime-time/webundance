@@ -12,7 +12,7 @@ const MotionCard = motion.create(UCard);
 
 <template>
 	<MotionCard
-		:initial="{ opacity: 0, x: 40 }"
+		:initial="{ opacity: 0, x: -40 }"
 		:while-in-view="{ opacity: 1, x: 0 }"
 		:viewport="{ once: true, amount: 0.7 }"
 		:transition="{ duration: 0.8, ease: 'easeOut' }"

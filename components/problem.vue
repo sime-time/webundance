@@ -20,12 +20,32 @@ const problems = [
 		icon: "lucide:user-round-x",
 		text: "Losing customers to competitors?",
 	},
+	{
+		id: 5,
+		icon: "lucide:phone-missed",
+		text: "Manually answering phone calls?",
+	},
+	{
+		id: 6,
+		icon: "lucide:calendar-x-2",
+		text: "Double bookings and no-shows?",
+	},
+	{
+		id: 7,
+		icon: "lucide:file-x",
+		text: "Struggle with collecting waivers?",
+	},
+	{
+		id: 8,
+		icon: "lucide:user-round-pen",
+		text: "Manually tracking customer information?",
+	},
 ];
 </script>
 
 <template>
 	<section id="pain-section" class="bg-primary-100 flex flex-col items-center justify-between gap-8 py-32 px-6">
-		<div class="container  mx-auto max-w-5xl text-center flex flex-col gap-3">
+		<div class="container mx-auto max-w-5xl text-center flex flex-col gap-3">
 			<h1 class="text-3xl lg:text-5xl font-bold">
 				Your Website Should <span class="underline underline-offset-5">Make You Money</span>
 			</h1>
