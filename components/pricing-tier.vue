@@ -5,6 +5,7 @@ defineProps<{
 	description: string;
 	price: string;
 	recurring: string;
+	buttonText: string;
 	highlighted: boolean;
 	features: string[];
 }>();
@@ -12,21 +13,38 @@ defineProps<{
 
 <template>
 	<UCard>
-		<UIcon :name="icon" />
-		<h2>{{ title }}</h2>
-		<p>{{ description }}</p>
+		<div class="flex flex-col gap-6 px-1">
+			<div class="flex flex-col items-start">
+				<UIcon :name="icon" class="text-primary text-3xl mb-2" />
+				<h2 class="font-semibold text-xl">
+					{{ title }}
+				</h2>
+				<p class="text-neutral-500">
+					{{ description }}
+				</p>
+			</div>
 
-		<p>
-			<span>${{ price }}</span>
-			<span>{{ recurring }}</span>
-		</p>
+			<p class="flex flex-col gap-2">
+				<span class="text-5xl font-semibold">${{ price }}</span>
+				<span class="text-base text-neutral-500">{{ recurring }}</span>
+			</p>
 
-		<!-- Button here -->
-		<slot />
+			<!-- Button here -->
+			<UButton
+				:to="highlighted ? '/book-call' : '/contact'"
+				size="xl"
+				class="justify-center font-semibold"
+				:variant="highlighted ? 'solid' : 'soft'"
+			>
+				{{ buttonText }}
+			</UButton>
 
-		<h3>Features:</h3>
-		<ul v-for="(feature, index) in features" :key="index">
-			<li>{{ feature }}</li>
-		</ul>
+			<ul class="flex flex-col gap-2">
+				<li v-for="(feature, index) in features" :key="index" class="flex items-center gap-2 text-lg">
+					<UIcon name="akar-icons:circle-check-fill" class="text-primary" />
+					<span>{{ feature }}</span>
+				</li>
+			</ul>
+		</div>
 	</UCard>
 </template>

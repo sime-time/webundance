@@ -2,33 +2,48 @@
 const tiers = [
 	{
 		id: 1,
-		icon: "",
+		icon: "lucide:briefcase-business",
 		title: "Basic",
-		description: "",
-		price: "250",
+		description: "Start with a digital presence",
+		price: "199",
 		recurring: "/month",
+		buttonText: "Get Started",
 		highlighted: false,
-		features: [],
+		features: [
+			"Mobile-Friendly Website",
+			"Blazingly Fast",
+			"Unlimited Updates",
+		],
 	},
 	{
 		id: 2,
-		icon: "",
+		icon: "lucide:users-round",
 		title: "Partnership",
-		description: "",
-		price: "500",
+		description: "Website with automated booking",
+		price: "499",
 		recurring: "+5% revenue share",
+		buttonText: "Partner with Us",
 		highlighted: true,
-		features: [],
+		features: [
+			"Booking & Scheduling",
+			"Business Domain Email",
+			"Google Maps Integration",
+		],
 	},
 	{
 		id: 3,
-		icon: "",
+		icon: "lucide:building",
 		title: "Premium",
-		description: "",
-		price: "5,000",
+		description: "For more complex businesses",
+		price: "8,000",
 		recurring: "/year",
+		buttonText: "Get Premium",
 		highlighted: false,
-		features: [],
+		features: [
+			"AI Phone Call Automation",
+			"Ecommerce",
+			"API Integration",
+		],
 	},
 ];
 </script>
@@ -40,7 +55,7 @@ const tiers = [
 				Pricing
 			</h1>
 			<p class="text-xl lg:text-2xl mb-4">
-				Simple, transparent pricing.
+				Simple, budget-friendly pricing options.
 			</p>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 				<div v-for="tier in tiers" :key="tier.id">
