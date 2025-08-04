@@ -5,29 +5,29 @@ const solutions = [
 		icon: "lucide:tablet-smartphone",
 		title: "Mobile-First",
 		list: [
-			"Responsive on all devices",
+			"Beautiful on all screen sizes",
+			"Loads instantly",
 			"Modern, professional design",
-			"Better user experience",
 		],
 	},
 	{
 		id: 2,
-		icon: "lucide:zap",
-		title: "Lightning Fast",
+		icon: "lucide:badge-dollar-sign",
+		title: "Payments & Subscriptions",
 		list: [
-			"Loads in seconds",
-			"Built with modern tech",
-			"No bloated add-ons",
+			"Accept tips and recurring payments",
+			"Connects with Square or Stripe accounts",
+			"Direct to your bank account",
 		],
 	},
 	{
 		id: 3,
 		icon: "lucide:calendar-days",
-		title: "Booking & Payments",
+		title: "24/7 Online Booking",
 		list: [
-			"24/7 online booking, branded to you",
+			"Custom-branded scheduler",
+			"Syncs with your real-time availability",
 			"Payment collection and subscriptions",
-			"Syncs with your calendar availability",
 		],
 	},
 	{
@@ -45,9 +45,9 @@ const solutions = [
 		icon: "lucide:search-code",
 		title: "SEO Friendly",
 		list: [
-			"Clear page structure",
+			"Bring in new local clients",
 			"Easier to find on Google",
-			"Clean, crawlable code",
+			"Clean structure",
 		],
 	},
 	{
@@ -67,10 +67,10 @@ const solutions = [
 	<section class="bg-gradient-to-b from-primary-100 to-neutral flex justify-center py-32">
 		<div class="container mx-auto  text-center flex flex-col gap-3 px-5 md:px-0">
 			<h1 class="text-3xl lg:text-5xl font-bold">
-				Your Solution
+				Your Booking System, Reimagined
 			</h1>
 			<p class="text-xl lg:text-2xl">
-				Custom-built website designed for your business needs.
+				A sleek, automated website that saves time and brings in more clients.
 			</p>
 			<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-4">
 				<div v-for="solution in solutions" :key="solution.id">

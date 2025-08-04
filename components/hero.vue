@@ -12,7 +12,7 @@ function scrollDown() {
 				Websites made for <span class="text-primary">Booking & Scheduling</span>
 			</h1>
 			<p class="text-base lg:text-2xl max-w-lg opacity-90">
-				Done-for-you booking and payment systems for busy fitness & service business owners.
+				Done-for-you booking, payment, and reminder systems for busy business owners.
 			</p>
 			<div class="flex gap-5 justify-center mt-4">
 				<UButton to="/contact" size="xl">

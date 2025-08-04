@@ -3,37 +3,37 @@ const problems = [
 	{
 		id: 1,
 		icon: "lucide:screen-share-off",
-		text: "Outdated, hard-to-use?",
+		text: "Outdated and unprofessional design?",
 	},
 	{
 		id: 2,
-		icon: "lucide:ban",
-		text: "Doesn't work well on phones?",
+		icon: "lucide:smartphone",
+		text: "Clients can't book easily on their phones?",
 	},
 	{
 		id: 3,
-		icon: "lucide:loader",
-		text: "Slow loading and frustrating to update?",
+		icon: "lucide:smartphone-nfc",
+		text: "Manually texting appointment reminders?",
 	},
 	{
 		id: 4,
-		icon: "lucide:user-round-x",
-		text: "Losing customers to competitors?",
-	},
-	{
-		id: 5,
-		icon: "lucide:phone-missed",
-		text: "Manually answering phone calls?",
-	},
-	{
-		id: 6,
 		icon: "lucide:calendar-x-2",
 		text: "Double bookings and no-shows?",
 	},
 	{
+		id: 5,
+		icon: "lucide:phone-missed",
+		text: "Answering calls and DMs all day?",
+	},
+	{
+		id: 6,
+		icon: "lucide:user-round-x",
+		text: "Losing customers to competitors?",
+	},
+	{
 		id: 7,
 		icon: "lucide:file-x",
-		text: "Struggle with collecting waivers?",
+		text: "Waivers and forms lost or forgotten?",
 	},
 	{
 		id: 8,
@@ -50,7 +50,7 @@ const problems = [
 				Your Website Should <span class="underline underline-offset-5">Make You Money</span>
 			</h1>
 			<p class="text-xl lg:text-2xl mt-2">
-				Does your website sound familiar?
+				Sound familiar?
 			</p>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
 				<div v-for="problem in problems" :key="problem.id">

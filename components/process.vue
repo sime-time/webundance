@@ -4,13 +4,13 @@ const process = [
 		id: 1,
 		icon: "i-lucide-compass",
 		title: "Discovery",
-		description: "We meet. You tell me what's broken. I listen.",
+		description: "We chat about what's not working and what you want.",
 	},
 	{
 		id: 2,
 		icon: "i-lucide-drafting-compass",
 		title: "Design",
-		description: "I prototype the solution for you to see the vision.",
+		description: "I show you a prototype that matches the brand.",
 	},
 	{
 		id: 3,
@@ -34,7 +34,7 @@ const process = [
 				Our Process
 			</h1>
 			<p class="text-xl lg:text-2xl text-center mb-4 px-3 md:px-0">
-				We follow a lean process with clear steps. Pivot until you're satisfied.
+				No tech skills needed, we handle it all.
 			</p>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-4">
 				<div v-for="step in process" :key="step.id">

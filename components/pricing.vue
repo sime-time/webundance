@@ -21,7 +21,7 @@ const tiers = [
 		id: 2,
 		icon: "lucide:users-round",
 		title: "Partnership",
-		description: "Website with automated payment system",
+		description: "Website with online booking or automated payments",
 		price: "$499",
 		recurring: "+5% per online transaction",
 		buttonText: "Work with Me",
@@ -29,10 +29,11 @@ const tiers = [
 		features: [
 			"Everything in Launch",
 			"Booking & Scheduling",
-			"Membership Subscriptions",
+			"Automated payments",
+			"SMS Text Reminders",
 			"Business Domain Email",
 			"Google Maps Integration",
-			"Live Google Reviews",
+			"Import Highest Google Reviews",
 		],
 	},
 	{
@@ -62,7 +63,7 @@ const tiers = [
 				Pricing
 			</h1>
 			<p class="text-xl lg:text-2xl mb-4">
-				Simple, budget-friendly pricing options.
+				Affordable, transparent options for every stage of your business.
 			</p>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<div v-for="tier in tiers" :key="tier.id">
