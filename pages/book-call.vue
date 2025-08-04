@@ -1,10 +1,7 @@
 <script setup lang="ts">
-const options = {
-	url: "https://calendly.com/1simeondunn/30min",
-	pageSettings: {
-		primaryColor: "10b981",
-	},
-};
+import CalCom from "~/components/cal-com.vue";
+
+const calLink = "simeondunn/intro";
 
 useSeoMeta({
 	title: "Webundance | Book a Call",
@@ -17,6 +14,6 @@ useSeoMeta({
 
 <template>
 	<main class="h-screen">
-		<CalendlyInlineWidget v-bind="options" style="height: 100vh" />
+		<CalCom :cal-link="calLink" brand-color="#10b981" style="height: 100vh" />
 	</main>
 </template>

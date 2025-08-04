@@ -4,7 +4,12 @@ export default defineNuxtConfig({
 	compatibilityDate: "2024-11-01",
 	devtools: { enabled: true },
 	css: ["~/assets/css/main.css"],
-	modules: ["@nuxt/ui", "@nuxt/eslint", "nuxt-calendly", "motion-v/nuxt"],
+	modules: [
+		"@nuxt/ui",
+		"@nuxt/eslint",
+		"motion-v/nuxt",
+		"@nuxt/scripts",
+	],
 	vite: {
 		plugins: [tailwindcss()],
 	},
