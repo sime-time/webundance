@@ -60,6 +60,7 @@ onMounted(() => {
 	Cal("init", "", {});
 
 	Cal("ui", {
+		theme: "light",
 		cssVarsPerTheme: {
 			light: {
 				"cal-brand": props.brandColor,
@@ -69,6 +70,7 @@ onMounted(() => {
 
 	Cal("inline", {
 		elementOrSelector: calContainer.value,
+		config: { theme: "light" },
 		calLink: props.calLink,
 	});
 });
@@ -77,6 +79,6 @@ onMounted(() => {
 <template>
 	<div
 		ref="calContainer"
-		style="width: 100%; height: 100%; overflow: scroll"
+		style="width: 100%; height: 100%; overflow: auto"
 	/>
 </template>
