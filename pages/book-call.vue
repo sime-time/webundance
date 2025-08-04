@@ -13,7 +13,7 @@ useSeoMeta({
 </script>
 
 <template>
-	<main class="h-screen">
-		<CalCom :cal-link="calLink" brand-color="#10b981" style="height: 100vh" />
+	<main>
+		<CalCom :cal-link="calLink" brand-color="#10b981" />
 	</main>
 </template>

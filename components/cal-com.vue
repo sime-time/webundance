@@ -22,35 +22,33 @@ onMounted(() => {
 			a.q.push(ar);
 		};
 		const d = C.document;
-		C.Cal
-			= C.Cal
-				|| function (...ar) {
-					const cal = C.Cal;
-					if (!cal.loaded) {
-						cal.ns = {};
-						cal.q = cal.q || [];
-						// This is the key: it injects the main script tag.
-						d.head.appendChild(d.createElement("script")).src = A;
-						cal.loaded = true;
-					}
-					if (ar[0] === L) {
-						const api = function (...args) {
-							p(api, args);
-						};
-						const namespace = ar[1];
-						api.q = api.q || [];
-						if (typeof namespace === "string") {
-							cal.ns[namespace] = cal.ns[namespace] || api;
-							p(cal.ns[namespace], ar);
-							p(cal, ["initNamespace", namespace]);
-						}
-						else {
-							p(cal, ar);
-						}
-						return;
-					}
-					p(cal, ar);
+		C.Cal = C.Cal || function (...ar) {
+			const cal = C.Cal;
+			if (!cal.loaded) {
+				cal.ns = {};
+				cal.q = cal.q || [];
+				// This is the key: it injects the main script tag.
+				d.head.appendChild(d.createElement("script")).src = A;
+				cal.loaded = true;
+			}
+			if (ar[0] === L) {
+				const api = function (...args) {
+					p(api, args);
 				};
+				const namespace = ar[1];
+				api.q = api.q || [];
+				if (typeof namespace === "string") {
+					cal.ns[namespace] = cal.ns[namespace] || api;
+					p(cal.ns[namespace], ar);
+					p(cal, ["initNamespace", namespace]);
+				}
+				else {
+					p(cal, ar);
+				}
+				return;
+			}
+			p(cal, ar);
+		};
 	})(window, "https://app.cal.com/embed/embed.js", "init");
 
 	// Now that `window.Cal` is defined, we can safely call it.
@@ -79,6 +77,6 @@ onMounted(() => {
 <template>
 	<div
 		ref="calContainer"
-		style="width: 100%; height: 100%; overflow: auto"
+		style="width: 100%; min-height: 100vh"
 	/>
 </template>

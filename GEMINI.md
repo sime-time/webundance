@@ -16,7 +16,6 @@ This project is a Nuxt.js application for "Webundance," which is an web developm
 - **Package Manager:** pnpm
 - **Key Modules:**
   - `@nuxt/ui`: For UI components.
-  - `nuxt-calendly`: For embedding Calendly.
   - `motion-v/nuxt`: For animations.
 
 ## Project Structure
