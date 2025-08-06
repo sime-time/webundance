@@ -5,7 +5,7 @@ const tiers = [
 		icon: "lucide:rocket",
 		title: "Launch",
 		description: "Basic website & hosting",
-		price: "$199",
+		price: "$99",
 		recurring: "per month",
 		buttonText: "Get Started",
 		highlighted: false,
@@ -23,7 +23,7 @@ const tiers = [
 		title: "Partnership",
 		description: "Website with online booking or automated payments",
 		price: "$499",
-		recurring: "+5% per online transaction",
+		recurring: "+$99 per month",
 		buttonText: "Work with Me",
 		highlighted: true,
 		features: [

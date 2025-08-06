@@ -14,11 +14,6 @@ const navLinks = [
 	},
 	{
 		id: 3,
-		label: "Portfolio",
-		href: "/portfolio",
-	},
-	{
-		id: 3,
 		label: "Pricing",
 		href: "/#pricing",
 	},

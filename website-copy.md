@@ -3,54 +3,54 @@
 ## Hero Section
 
 - **Heading:** Websites made for Booking & Scheduling
-- **Subheading:** Done-for-you booking and payment systems for busy fitness & service business owners.
+- **Subheading:** Done-for-you booking, payment, and reminder systems for busy business owners.
 - **Button:** Get Your System
 
 ## Problem Section
 
 - **Heading:** Your Website Should Make You Money
-- **Subheading:** Does your website sound familiar?
+- **Subheading:** Sound familiar?
 - **Problems:**
-  - Outdated, hard-to-use?
-  - Doesn't work well on phones?
-  - Slow loading and frustrating to update?
-  - Losing customers to competitors?
-  - Manually answering phone calls?
+  - Outdated and unprofessional design?
+  - Clients can't book easily on their phones?
+  - Manually texting appointment reminders?
   - Double bookings and no-shows?
-  - Struggle with collecting waivers?
+  - Answering calls and DMs all day?
+  - Losing customers to competitors?
+  - Waivers and forms lost or forgotten?
   - Manually tracking customer information?
 - **Button:** Solve These Problems
 
 ## Solution Section
 
-- **Heading:** Your Solution
-- **Subheading:** Custom-built website designed for your business needs.
+- **Heading:** Your Booking System, Reimagined
+- **Subheading:** A sleek, automated website that saves time and brings in more clients.
 - **Solutions:**
-  - **Mobile-First:** Responsive on all devices, Modern, professional design, Better user experience
-  - **Lightning Fast:** Loads in seconds, Built with modern tech, No bloated add-ons
-  - **Booking & Payments:** 24/7 online booking, branded to you, Payment collection and subscriptions, Syncs with your calendar availability
+  - **Mobile-First:** Beautiful on all screen sizes, Loads instantly, Modern, professional design
+  - **Payments & Subscriptions:** Accept tips and recurring payments, Connects with Square or Stripe accounts, Direct to your bank account
+  - **24/7 Online Booking:** Custom-branded scheduler, Syncs with your real-time availability, Payment collection and subscriptions
   - **Emails & SMS Texts:** Reminders to reduce no-shows, Automated follow-ups, Lead qualification
-  - **SEO Friendly:** Clear page structure, Easier to find on Google, Clean, crawlable code
+  - **SEO Friendly:** Bring in new local clients, Easier to find on Google, Clean structure
   - **Digital Forms & Waivers:** Branded digital forms, E-signatures for waivers and agreements, Replace all paper forms
 - **Button:** Get Your Solution
 
 ## Process Section
 
 - **Heading:** Our Process
-- **Subheading:** We follow a lean process with clear steps. Pivot until you're satisfied.
+- **Subheading:** No tech skills needed, we handle it all.
 - **Steps:**
-  - **Discovery:** We meet. You tell me what's broken. I listen.
-  - **Design:** I prototype the solution for you to see the vision.
+  - **Discovery:** We chat about what's not working and what you want.
+  - **Design:** I show you a prototype that matches the brand.
   - **Develop:** I build it fast. No bloat. No fluff.
   - **Deploy:** Live, tested, and ready. You own it.
 
 ## Pricing Section
 
 - **Heading:** Pricing
-- **Subheading:** Simple, budget-friendly pricing options.
+- **Subheading:** Affordable, transparent options for every stage of your business.
 - **Tiers:**
   - **Launch:** $199/month - Basic website & hosting. Features: Mobile-Friendly Website, Fast Page Load Speed, Unlimited Updates, Contact Page, SEO.
-  - **Partnership:** $499 +5% per online transaction - Website with automated payment system. Features: Everything in Launch, Booking & Scheduling, Membership Subscriptions, SMS Text Reminders, Business Domain Email, Google Maps Integration, Live Google Reviews.
+  - **Partnership:** $499 +5% per online transaction - Website with online booking or automated payments. Features: Everything in Launch, Booking & Scheduling, Automated payments, SMS Text Reminders, Business Domain Email, Google Maps Integration, Import Highest Google Reviews.
   - **Premium:** $8,000/year - For more complex businesses. Features: Everything in Partnership, AI Automation, Content Mangagement System, Custom API Integrations, Voiced AI Appointment Setter.
 
 ## FAQ Section
@@ -98,7 +98,7 @@
 
 ## Portfolio Page
 
-- **Heading:** Portfolio
+- **Heading:** porfolio
 
 ---
 
