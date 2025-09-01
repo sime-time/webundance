@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
 		}
 
 		const data = await resend.emails.send({
-			from: "webundance <support@webundance.com>",
+			from: "Webundance <1simeondunn@gmail.com>",
 			to: ["1simeondunn@gmail.com"],
 			subject: `Contact Form Submission`,
 			html: `
