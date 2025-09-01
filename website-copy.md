@@ -92,7 +92,7 @@
   - Fill out the form below to tell me about your project, and I'll get back to you as soon as possible to discuss next steps.
   - Or if you prefer, you can schedule a call directly using the booking link.
 - **Button:** 1-on-1 Video Call
-- **Email:** support@webundance.com
+- **Email:** 1simeondunn@gmail.com
 
 ---
 

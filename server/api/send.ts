@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
 		}
 
 		const data = await resend.emails.send({
-			from: "Webundance <1simeondunn@gmail.com>",
+			from: "Webundance <resend@info.habitribe.app>",
 			to: ["1simeondunn@gmail.com"],
 			subject: `Contact Form Submission`,
 			html: `
